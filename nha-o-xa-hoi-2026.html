@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hướng Dẫn Mua Nhà Ở Xã Hội 2026 — Nhà Tốt</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --orange:       #F26522;
+    --orange-dark:  #D4551A;
+    --orange-light: #FFF3ED;
+    --orange-mid:   #FDDDC9;
+    --dark:         #1C1C1C;
+    --dark-2:       #2D2D2D;
+    --mid:          #4A4A4A;
+    --muted:        #6B6B6B;
+    --border:       #E0E0E0;
+    --border-light: #EBEBEB;
+    --bg:           #F8F8F8;
+    --white:        #FFFFFF;
+    --green:        #1E7E34;
+    --green-light:  #F0FBF3;
+    --blue:         #1A56A0;
+    --blue-light:   #EEF4FF;
+    --amber:        #7D5A00;
+    --amber-light:  #FFF9E6;
+    --radius:       8px;
+    --shadow:       0 1px 4px rgba(0,0,0,.08);
+    --shadow-md:    0 4px 16px rgba(0,0,0,.10);
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--dark);
+    line-height: 1.65;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── TOPBAR ── */
+  .topbar {
+    background: var(--white);
+    border-bottom: 1px solid var(--border-light);
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 48px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .topbar a { color: var(--muted); text-decoration: none; }
+  .topbar a:hover { color: var(--orange); }
+  .topbar-sep { color: var(--border); }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--dark);
+    color: var(--white);
+    padding: 56px 32px 64px;
+  }
+  .hero-inner { max-width: 860px; margin: 0 auto; }
+  .hero-eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 18px;
+    border-left: 3px solid var(--orange);
+    padding-left: 10px;
+  }
+  .hero h1 {
+    font-size: clamp(26px, 4vw, 40px);
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: -.5px;
+    margin-bottom: 24px;
+    color: var(--white);
+  }
+  .hero h1 span { color: var(--orange); }
+  .hero-lead {
+    font-size: 16px;
+    color: rgba(255,255,255,.75);
+    max-width: 680px;
+    line-height: 1.75;
+    margin-bottom: 32px;
+  }
+  .hero-facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1px;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: var(--radius);
+    overflow: hidden;
+    max-width: 760px;
+  }
+  .hero-fact {
+    background: rgba(255,255,255,.04);
+    padding: 16px 20px;
+  }
+  .hero-fact-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    color: rgba(255,255,255,.45);
+    margin-bottom: 4px;
+  }
+  .hero-fact-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255,255,255,.9);
+    line-height: 1.4;
+  }
+
+  /* ── HOW THIS WORKS ── */
+  .howto {
+    background: var(--orange-light);
+    border-bottom: 1px solid var(--orange-mid);
+    padding: 14px 32px;
+  }
+  .howto-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+  .howto-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    color: var(--orange-dark);
+    white-space: nowrap;
+  }
+  .howto-steps {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .howto-step {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--dark-2);
+    font-weight: 500;
+  }
+  .howto-step-num {
+    width: 22px; height: 22px;
+    background: var(--orange);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .howto-arrow { color: var(--orange); font-size: 14px; }
+
+  /* ── STICKY ── */
+  .sticky-bar {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--dark);
+    border-bottom: 2px solid var(--orange);
+    padding: 10px 32px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .sticky-bar.show { display: flex; }
+  .sticky-bar-left { display: flex; align-items: center; gap: 12px; }
+  .sticky-bar-group {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    border-radius: 4px;
+    padding: 2px 8px;
+  }
+  .sticky-bar-name { font-size: 13.5px; color: rgba(255,255,255,.9); font-weight: 500; }
+  .sticky-bar-reset {
+    font-size: 12.5px;
+    color: rgba(255,255,255,.5);
+    cursor: pointer;
+    background: none; border: none;
+    text-decoration: underline;
+  }
+  .sticky-bar-reset:hover { color: rgba(255,255,255,.85); }
+
+  /* ── MAIN ── */
+  .main { max-width: 860px; margin: 0 auto; padding: 40px 32px 80px; }
+  @media (max-width: 600px) { .main { padding: 28px 16px 60px; } }
+
+  /* ── SECTION HEADER ── */
+  .sec-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+  .sec-num {
+    width: 32px; height: 32px;
+    background: var(--orange);
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 15px; font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .sec-title { font-size: 19px; font-weight: 700; color: var(--dark); line-height: 1.3; }
+  .sec-sub { font-size: 13.5px; color: var(--muted); margin-top: 3px; }
+
+  .step-block { margin-bottom: 44px; }
+  .step-block.hidden { display: none; }
+  .divider { height: 1px; background: var(--border-light); margin: 36px 0; display: none; }
+  .divider.show { display: block; }
+
+  /* ── GROUP CARDS ── */
+  .group-list { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--white); }
+  .group-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-light);
+    transition: background .15s;
+    position: relative;
+  }
+  .group-row:last-child { border-bottom: none; }
+  .group-row:hover { background: #FAFAFA; }
+  .group-row.selected { background: var(--orange-light); border-color: var(--orange-mid); }
+  .group-row.selected::before {
+    content: '';
+    position: absolute; left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--orange);
+  }
+  .group-row-num {
+    width: 52px;
+    padding: 18px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .group-num-badge {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    border: 1.5px solid var(--border);
+    font-size: 12px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted);
+    background: var(--white);
+    margin-top: 1px;
+  }
+  .group-row.selected .group-num-badge {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: var(--white);
+  }
+  .group-row-body { flex: 1; padding: 16px 16px 16px 0; }
+  .group-row-label {
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    color: var(--orange);
+    margin-bottom: 3px;
+  }
+  .group-row-title {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+  .group-row-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+  .group-row-check {
+    width: 44px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 18px;
+    flex-shrink: 0;
+  }
+  .check-circle {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: var(--orange);
+    display: none;
+    align-items: center; justify-content: center;
+  }
+  .group-row.selected .check-circle { display: flex; }
+  .check-circle svg { width: 12px; height: 12px; fill: none; stroke: white; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* ── CONDITIONS ── */
+  .cond-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 600px) { .cond-grid { grid-template-columns: 1fr; } }
+  .cond-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+  .cond-card-head {
+    padding: 12px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .cond-card-head.blue { background: var(--blue-light); color: var(--blue); }
+  .cond-card-head.green { background: var(--green-light); color: var(--green); }
+  .cond-card-body { padding: 16px 18px; }
+  .cond-item { display: flex; gap: 10px; margin-bottom: 11px; font-size: 13.5px; color: var(--dark-2); line-height: 1.55; }
+  .cond-item:last-child { margin-bottom: 0; }
+  .cond-bullet { width: 5px; height: 5px; border-radius: 50%; background: var(--orange); flex-shrink: 0; margin-top: 8px; }
+  .cond-note {
+    margin-top: 12px;
+    padding: 10px 14px;
+    background: var(--amber-light);
+    border-left: 3px solid #E6A800;
+    border-radius: 4px;
+    font-size: 12.5px;
+    color: var(--amber);
+    line-height: 1.55;
+  }
+  .income-tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .income-tbl th { padding: 8px 12px; background: var(--green-light); color: var(--green); font-weight: 700; text-align: left; border-bottom: 1px solid #C6F0D0; font-size: 12px; }
+  .income-tbl td { padding: 9px 12px; border-bottom: 1px solid var(--border-light); color: var(--dark-2); vertical-align: middle; }
+  .income-tbl tr:last-child td { border-bottom: none; }
+  .income-tbl td:last-child { font-weight: 700; color: var(--dark); text-align: right; }
+  .special-box {
+    background: var(--blue-light);
+    border: 1px solid #C3D9F5;
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    font-size: 13.5px;
+    color: #1A3560;
+    line-height: 1.65;
+  }
+  .special-box strong { color: var(--blue); }
+
+  /* ── DOCUMENTS ── */
+  .doc-section-title {
+    font-size: 10.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--muted);
+    margin: 24px 0 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .doc-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .doc-card-inner { padding: 18px 20px; }
+  .doc-card-top { display: flex; gap: 16px; align-items: flex-start; }
+  .doc-card-left { flex: 1; min-width: 0; }
+  .doc-form-code {
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    color: var(--orange);
+    margin-bottom: 3px;
+  }
+  .doc-official-name {
+    font-size: 11.5px;
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+  .doc-title { font-size: 15px; font-weight: 700; color: var(--dark); line-height: 1.35; margin-bottom: 10px; }
+  .doc-meta { display: flex; flex-wrap: wrap; gap: 6px; }
+  .doc-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 11.5px;
+    font-weight: 500;
+    background: var(--bg);
+    color: var(--mid);
+    border: 1px solid var(--border-light);
+  }
+  .doc-tag.blue { background: var(--blue-light); color: var(--blue); border-color: #C3D9F5; }
+  .doc-tag.amber { background: var(--amber-light); color: var(--amber); border-color: #E6D080; }
+  .doc-actions { display: flex; gap: 8px; flex-shrink: 0; flex-wrap: wrap; align-items: flex-start; }
+  .btn-dl {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: var(--orange);
+    color: var(--white);
+    border: none; border-radius: var(--radius);
+    padding: 9px 16px;
+    font-size: 13px; font-weight: 600;
+    cursor: pointer; text-decoration: none;
+    transition: background .15s;
+    white-space: nowrap;
+  }
+  .btn-dl:hover { background: var(--orange-dark); }
+  .btn-dl-sec {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: var(--white);
+    color: var(--mid);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 9px 14px;
+    font-size: 12.5px; font-weight: 500;
+    cursor: pointer; text-decoration: none;
+    transition: border-color .15s;
+    white-space: nowrap;
+  }
+  .btn-dl-sec:hover { border-color: var(--muted); color: var(--dark); }
+  .doc-note {
+    margin-top: 12px;
+    padding: 9px 13px;
+    border-left: 3px solid;
+    border-radius: 3px;
+    font-size: 12.5px;
+    line-height: 1.6;
+  }
+  .doc-note.warn { background: var(--amber-light); border-color: #E6A800; color: var(--amber); }
+  .doc-note.info { background: var(--blue-light); border-color: #63A0E0; color: var(--blue); }
+  .doc-note.special { background: #F5F0FF; border-color: #A78BFA; color: #4C1D95; }
+  .doc-split-row {
+    display: flex;
+    gap: 1px;
+    background: var(--border-light);
+    border-top: 1px solid var(--border-light);
+  }
+  .doc-split-col {
+    flex: 1;
+    padding: 14px 18px;
+    background: var(--white);
+  }
+  .doc-split-label { font-size: 11.5px; font-weight: 700; color: var(--dark-2); margin-bottom: 4px; }
+  .doc-split-sub { font-size: 11.5px; color: var(--muted); margin-bottom: 10px; line-height: 1.4; }
+  .doc-noform-card {
+    background: var(--bg);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    margin-bottom: 8px;
+  }
+  .doc-noform-card .doc-form-code { color: var(--muted); }
+
+  /* ── SUBMISSION ── */
+  .sub-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+  .sub-row { display: flex; gap: 16px; padding: 16px 20px; border-bottom: 1px solid var(--border-light); align-items: flex-start; }
+  .sub-row:last-child { border-bottom: none; }
+  .sub-row-num {
+    width: 28px; height: 28px;
+    background: var(--dark);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 13px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; margin-top: 1px;
+  }
+  .sub-title { font-size: 14px; font-weight: 700; color: var(--dark); margin-bottom: 3px; }
+  .sub-desc { font-size: 13.5px; color: var(--muted); line-height: 1.55; }
+  .sub-link { color: var(--orange); text-decoration: none; font-weight: 600; }
+  .sub-link:hover { text-decoration: underline; }
+
+  /* ── LEGAL REFS ── */
+  .legal-box { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); }
+  .legal-box h4 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: var(--muted); margin-bottom: 14px; }
+  .legal-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .legal-list a { color: var(--dark-2); text-decoration: none; font-size: 13.5px; display: flex; align-items: baseline; gap: 8px; }
+  .legal-list a:hover { color: var(--orange); }
+  .legal-list-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--orange); flex-shrink: 0; margin-top: 7px; }
+
+  @media (max-width: 580px) {
+    .doc-card-top { flex-direction: column; }
+    .doc-actions { width: 100%; }
+    .btn-dl, .btn-dl-sec { flex: 1; justify-content: center; }
+    .doc-split-row { flex-direction: column; gap: 0; }
+    .doc-split-col { border-bottom: 1px solid var(--border-light); }
+    .hero { padding: 40px 20px 48px; }
+    .howto { padding: 12px 20px; }
+    .topbar { padding: 0 16px; }
+    .sticky-bar { padding: 10px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <a href="#">Trang chủ</a>
+  <span class="topbar-sep">/</span>
+  <a href="#">Thủ tục</a>
+  <span class="topbar-sep">/</span>
+  <span>Hướng dẫn mua nhà ở xã hội 2026</span>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Cẩm nang thủ tục · Cập nhật 2026</div>
+    <h1>Tất cả những gì bạn cần biết<br>để mua <span>nhà ở xã hội</span></h1>
+    <p class="hero-lead">
+      Nhà ở xã hội là loại nhà được Nhà nước hỗ trợ dành riêng cho người thu nhập thấp và các đối tượng ưu tiên — với giá thấp hơn thị trường và được hỗ trợ vay vốn ưu đãi qua ngân hàng chính sách. Tuy nhiên, quy trình đăng ký phức tạp, mẫu hồ sơ thay đổi liên tục và rất khó tra cứu.<br><br>
+      Trang này tổng hợp đầy đủ: điều kiện đủ tiêu chuẩn, danh sách hồ sơ theo từng nhóm đối tượng, và đường dẫn tải trực tiếp từng biểu mẫu — theo quy định mới nhất tại Nghị định 261/2025/NĐ-CP và Thông tư 32/2025/TT-BXD.
+    </p>
+    <div class="hero-facts">
+      <div class="hero-fact">
+        <div class="hero-fact-label">Căn cứ pháp lý</div>
+        <div class="hero-fact-value">Luật Nhà ở 2023 · NĐ 261/2025 · TT 32/2025</div>
+      </div>
+      <div class="hero-fact">
+        <div class="hero-fact-label">Số nhóm đối tượng</div>
+        <div class="hero-fact-value">11 nhóm theo Điều 76 Luật Nhà ở 2023</div>
+      </div>
+      <div class="hero-fact">
+        <div class="hero-fact-label">Hiệu lực hồ sơ</div>
+        <div class="hero-fact-value">6 tháng kể từ ngày được cơ quan xác nhận</div>
+      </div>
+      <div class="hero-fact">
+        <div class="hero-fact-label">Cách sử dụng trang này</div>
+        <div class="hero-fact-value">Chọn nhóm → Xem điều kiện → Tải đúng mẫu</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW-TO BAR -->
+<div class="howto">
+  <div class="howto-inner">
+    <span class="howto-label">Các bước</span>
+    <div class="howto-steps">
+      <div class="howto-step"><div class="howto-step-num">1</div> Chọn nhóm đối tượng</div>
+      <span class="howto-arrow">›</span>
+      <div class="howto-step"><div class="howto-step-num">2</div> Xem điều kiện cần đáp ứng</div>
+      <span class="howto-arrow">›</span>
+      <div class="howto-step"><div class="howto-step-num">3</div> Tải đúng hồ sơ, biểu mẫu</div>
+      <span class="howto-arrow">›</span>
+      <div class="howto-step"><div class="howto-step-num">4</div> Nộp hồ sơ cho chủ đầu tư</div>
+    </div>
+  </div>
+</div>
+
+<!-- STICKY -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-bar-left">
+    <span class="sticky-bar-group" id="stickyGroup"></span>
+    <span class="sticky-bar-name" id="stickyName"></span>
+  </div>
+  <button class="sticky-bar-reset" onclick="resetGroup()">Đổi nhóm</button>
+</div>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- STEP 1 -->
+  <div class="step-block" id="step1">
+    <div class="sec-header">
+      <div class="sec-num">1</div>
+      <div>
+        <div class="sec-title">Bạn thuộc nhóm đối tượng nào?</div>
+        <div class="sec-sub">Theo Điều 76 Luật Nhà ở 2023 — chọn nhóm phù hợp với hoàn cảnh của bạn</div>
+      </div>
+    </div>
+    <div class="group-list" id="groupList"></div>
+  </div>
+
+  <div class="divider" id="div1"></div>
+
+  <!-- STEP 2 -->
+  <div class="step-block hidden" id="step2">
+    <div class="sec-header">
+      <div class="sec-num">2</div>
+      <div>
+        <div class="sec-title">Điều kiện cần đáp ứng</div>
+        <div class="sec-sub" id="step2Sub"></div>
+      </div>
+    </div>
+    <div class="cond-grid" id="condGrid"></div>
+  </div>
+
+  <div class="divider" id="div2"></div>
+
+  <!-- STEP 3 -->
+  <div class="step-block hidden" id="step3">
+    <div class="sec-header">
+      <div class="sec-num">3</div>
+      <div>
+        <div class="sec-title">Hồ sơ cần chuẩn bị</div>
+        <div class="sec-sub">Chỉ hiển thị biểu mẫu áp dụng cho nhóm bạn đã chọn</div>
+      </div>
+    </div>
+    <div id="docsWrap"></div>
+  </div>
+
+  <div class="divider" id="div3"></div>
+
+  <!-- STEP 4 -->
+  <div class="step-block hidden" id="step4">
+    <div class="sec-header">
+      <div class="sec-num">4</div>
+      <div>
+        <div class="sec-title">Nộp hồ sơ ở đâu?</div>
+        <div class="sec-sub">Sau khi chuẩn bị đầy đủ hồ sơ theo danh sách trên</div>
+      </div>
+    </div>
+    <div class="sub-card">
+      <div class="sub-row">
+        <div class="sub-row-num">1</div>
+        <div>
+          <div class="sub-title">Nộp trực tiếp cho chủ đầu tư dự án</div>
+          <div class="sub-desc">Liên hệ đơn vị chủ đầu tư của dự án nhà ở xã hội mà bạn muốn mua để nhận hướng dẫn nộp hồ sơ cụ thể cho từng dự án.</div>
+        </div>
+      </div>
+      <div class="sub-row">
+        <div class="sub-row-num">2</div>
+        <div>
+          <div class="sub-title">Hoặc nộp qua Sở Xây dựng / cổng dịch vụ công địa phương</div>
+          <div class="sub-desc">Tùy địa phương. Tại Hà Nội: đăng ký trực tuyến tại <a href="https://soxaydung.hanoi.gov.vn" target="_blank" class="sub-link">soxaydung.hanoi.gov.vn</a>. Các địa phương khác liên hệ Sở Xây dựng tỉnh/thành phố để được hướng dẫn.</div>
+        </div>
+      </div>
+      <div class="sub-row">
+        <div class="sub-row-num">3</div>
+        <div>
+          <div class="sub-title">Hồ sơ được xét duyệt và danh sách công bố công khai</div>
+          <div class="sub-desc">Sau khi tiếp nhận, chủ đầu tư/Sở Xây dựng kiểm tra tính hợp lệ. Danh sách người đủ điều kiện được niêm yết công khai để đảm bảo minh bạch theo quy định.</div>
+        </div>
+      </div>
+      <div class="sub-row">
+        <div class="sub-row-num">4</div>
+        <div>
+          <div class="sub-title">Ký hợp đồng mua bán và tiến hành thanh toán</div>
+          <div class="sub-desc">Nếu đủ điều kiện, bạn được mời ký hợp đồng và thanh toán, nhận nhà theo tiến độ trong hợp đồng mua bán.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:32px">
+      <div class="legal-box">
+        <h4>Văn bản pháp lý tham chiếu</h4>
+        <ul class="legal-list">
+          <li><span class="legal-list-dot"></span><a href="https://thuvienphapluat.vn/van-ban/Xay-dung-Do-thi/Nghi-dinh-261-2025-ND-CP-sua-doi-Nghi-dinh-100-2024-ND-CP-huong-dan-Luat-Nha-o-661849.aspx" target="_blank">Nghị định 261/2025/NĐ-CP — Sửa đổi Nghị định 100/2024, hướng dẫn Luật Nhà ở về nhà ở xã hội</a></li>
+          <li><span class="legal-list-dot"></span><a href="https://thuvienphapluat.vn/van-ban/Bat-dong-san/Nghi-dinh-100-2024-ND-CP-huong-dan-Luat-nha-o-ve-phat-trien-nha-o-xa-hoi-611295.aspx" target="_blank">Nghị định 100/2024/NĐ-CP — Hướng dẫn Luật Nhà ở về phát triển và quản lý nhà ở xã hội</a></li>
+          <li><span class="legal-list-dot"></span><a href="https://thuvienphapluat.vn/van-ban/Bat-dong-san/Luat-Nha-o-27-2023-QH15-528669.aspx" target="_blank">Luật Nhà ở 2023 (Luật số 27/2023/QH15)</a></li>
+          <li><span class="legal-list-dot"></span><a href="https://thuvienphapluat.vn/van-ban/Xay-dung-Do-thi/Thong-tu-32-2025-TT-BXD-sua-doi-Thong-tu-05-2024-TT-BXD-huong-dan-Luat-Nha-o-680536.aspx" target="_blank">Thông tư 32/2025/TT-BXD — Sửa đổi Thông tư 05/2024, cập nhật biểu mẫu hồ sơ mới nhất</a></li>
+          <li><span class="legal-list-dot"></span><a href="https://thuvienphapluat.vn/van-ban/Xay-dung-Do-thi/Thong-tu-05-2024-TT-BXD-huong-dan-Luat-Nha-o-619495.aspx" target="_blank">Thông tư 05/2024/TT-BXD — Ban hành các mẫu đơn, giấy tờ trong quản lý nhà ở xã hội</a></li>
+          <li><span class="legal-list-dot"></span><a href="https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Phap-lenh-02-2020-UBTVQH14-uu-dai-nguoi-co-cong-voi-Cach-mang-460718.aspx" target="_blank">Pháp lệnh Ưu đãi người có công với cách mạng 2020 (Pháp lệnh số 02/2020/UBTVQH14)</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+// ─── DATA ─────────────────────────────────────────────────────────────────────
+
+const GROUPS = [
+  {
+    id: 'nhom5',
+    label: 'Nhóm 5',
+    title: 'Người thu nhập thấp tại khu vực đô thị',
+    desc: 'Cá nhân hoặc hộ gia đình có mức thu nhập thấp đang cư trú tại khu vực đô thị, chưa có nhà ở thuộc sở hữu của mình hoặc có nhà nhưng diện tích bình quân dưới 15 m²/người.',
+    incomeType: 'standard',
+    hasOptional05: true,
+    docs: ['mau01','mau01a','mau02_03','mau04_05']
+  },
+  {
+    id: 'nhom6',
+    label: 'Nhóm 6',
+    title: 'Công nhân, người lao động',
+    desc: 'Công nhân, người lao động đang làm việc tại doanh nghiệp, hợp tác xã, liên hiệp hợp tác xã trong và ngoài khu công nghiệp.',
+    incomeType: 'standard',
+    docs: ['mau01','mau01a','mau02_03','mau04']
+  },
+  {
+    id: 'nhom7',
+    label: 'Nhóm 7',
+    title: 'Sĩ quan, quân nhân chuyên nghiệp, lực lượng vũ trang và cơ yếu',
+    desc: 'Sĩ quan, quân nhân chuyên nghiệp, hạ sĩ quan thuộc lực lượng vũ trang nhân dân, công nhân công an, công chức, công nhân và viên chức quốc phòng đang phục vụ tại ngũ; người làm công tác cơ yếu, người làm công tác khác trong tổ chức cơ yếu hưởng lương từ ngân sách nhà nước đang công tác.',
+    incomeType: 'military',
+    docs: ['mau01','military_cert','mau02_03','mau04']
+  },
+  {
+    id: 'nhom8',
+    label: 'Nhóm 8',
+    title: 'Cán bộ, công chức, viên chức',
+    desc: 'Cán bộ, công chức, viên chức theo quy định của pháp luật về cán bộ, công chức, viên chức.',
+    incomeType: 'standard',
+    docs: ['mau01','mau01a','mau02_03','mau04']
+  },
+  {
+    id: 'nhom234',
+    label: 'Nhóm 2–4',
+    title: 'Hộ gia đình nghèo, cận nghèo',
+    desc: 'Nhóm 2: Hộ gia đình nghèo, cận nghèo tại khu vực nông thôn.\nNhóm 3: Hộ gia đình nghèo, cận nghèo tại khu vực nông thôn thuộc vùng thường xuyên bị ảnh hưởng bởi thiên tai, biến đổi khí hậu.\nNhóm 4: Hộ gia đình nghèo, cận nghèo tại khu vực đô thị.',
+    incomeType: 'poverty',
+    docs: ['mau01','poverty_cert','mau02_03']
+  },
+  {
+    id: 'nhom1',
+    label: 'Nhóm 1',
+    title: 'Người có công với cách mạng, thân nhân liệt sĩ',
+    desc: 'Người có công với cách mạng, thân nhân liệt sĩ thuộc trường hợp được hỗ trợ cải thiện nhà ở theo quy định của Pháp lệnh Ưu đãi người có công với cách mạng.',
+    incomeType: 'meritorious',
+    docs: ['mau01','merit_cert','mau02_03']
+  },
+  {
+    id: 'nhom91011',
+    label: 'Nhóm 9–11',
+    title: 'Các trường hợp đặc biệt',
+    desc: 'Nhóm 9: Đối tượng đã trả lại nhà ở công vụ, trừ trường hợp bị thu hồi do vi phạm.\nNhóm 10: Hộ gia đình, cá nhân thuộc trường hợp bị thu hồi đất và phải giải tỏa, phá dỡ nhà ở mà chưa được Nhà nước bồi thường bằng nhà ở, đất ở.\nNhóm 11: Học sinh, sinh viên các trường đại học, học viện, cao đẳng, dạy nghề và trường chuyên biệt; học sinh trường dân tộc nội trú công lập.',
+    incomeType: 'standard',
+    docs: ['mau01','mau01a','special_cert','mau02_03','mau04']
+  }
+];
+
+const DOCS = {
+  mau01: {
+    section: 'Đơn đăng ký',
+    code: 'Mẫu số 01 · Phụ lục Nghị định 261/2025/NĐ-CP',
+    officialName: 'Đơn đăng ký mua, thuê mua nhà ở xã hội',
+    title: 'Đơn đăng ký mua nhà ở xã hội',
+    who: 'Người đứng đơn tự kê khai và ký',
+    confirmedBy: null,
+    url: 'https://attachment.vnecdn.net/2025/11/20/Mau-01-Don-dang-ky-mua-thue-nha-o-xa-hoi-doc.doc',
+    urlAlt: 'https://cdn.thuvienphapluat.vn//phap-luat/2022-2/NTMH/13102025/don-mua-nha-o-xa-hoi-2025.docx',
+    validity: null,
+    note: null,
+    noteType: null
+  },
+  mau01a: {
+    section: 'Chứng minh đối tượng',
+    code: 'Mẫu số 01 · Phụ lục I Thông tư 05/2024/TT-BXD (sửa đổi TT 32/2025)',
+    officialName: 'Giấy xác nhận đối tượng và điều kiện về nhà ở, thu nhập của người đăng ký mua nhà ở xã hội',
+    title: 'Giấy xác nhận đối tượng và điều kiện về nhà ở, thu nhập',
+    who: 'Nhóm 5, 6, 8, 9, 10, 11',
+    confirmedBy: 'Xác nhận bởi cơ quan / đơn vị / doanh nghiệp nơi làm việc',
+    url: 'https://attachment.vnecdn.net/2025/11/20/Mau-02-Giay-xac-nhan-ve-doi-tuong-doc.doc',
+    urlAlt: null,
+    validity: '6 tháng kể từ ngày được xác nhận',
+    note: null,
+    noteType: null
+  },
+  mau02_03: {
+    section: 'Chứng minh điều kiện về nhà ở',
+    isSplit: true
+  },
+  mau04_05: {
+    section: 'Chứng minh điều kiện về thu nhập',
+    isSplitIncome: true
+  },
+  mau04: {
+    section: 'Chứng minh điều kiện về thu nhập',
+    code: 'Mẫu số 04 · Phụ lục I Thông tư 05/2024/TT-BXD',
+    officialName: 'Giấy xác nhận điều kiện về thu nhập của người đăng ký mua, thuê mua nhà ở xã hội',
+    title: 'Giấy xác nhận điều kiện về thu nhập',
+    who: 'Người đứng đơn (và vợ/chồng nếu đã kết hôn)',
+    confirmedBy: 'Xác nhận bởi cơ quan / đơn vị / doanh nghiệp nơi làm việc',
+    url: 'https://attachment.vnecdn.net/2025/11/20/Mau-05-Giay-xac-nhan-dieu-kien-thu-nhap-co-HDLD-doc.doc',
+    urlAlt: null,
+    validity: '6 tháng. Thu nhập được tính trong 12 tháng gần nhất',
+    note: null,
+    noteType: null
+  },
+  poverty_cert: {
+    section: 'Chứng minh đối tượng và điều kiện thu nhập',
+    code: 'Không có biểu mẫu riêng — Bản sao có chứng thực',
+    officialName: 'Giấy chứng nhận hộ gia đình nghèo / hộ cận nghèo',
+    title: 'Giấy chứng nhận hộ nghèo hoặc hộ cận nghèo',
+    who: 'Hộ gia đình đã được cấp giấy chứng nhận',
+    confirmedBy: 'UBND cấp xã cấp — mang bản sao có chứng thực khi nộp hồ sơ',
+    url: null,
+    validity: null,
+    note: 'Giấy chứng nhận hộ nghèo/cận nghèo này thay thế đồng thời cả giấy chứng minh đối tượng lẫn giấy kê khai điều kiện về thu nhập.',
+    noteType: 'info',
+    isNoForm: true
+  },
+  merit_cert: {
+    section: 'Chứng minh đối tượng',
+    code: 'Không có biểu mẫu riêng — Bản sao có chứng thực',
+    officialName: 'Giấy tờ chứng minh người có công với cách mạng hoặc thân nhân liệt sĩ',
+    title: 'Giấy tờ chứng minh người có công với cách mạng / thân nhân liệt sĩ',
+    who: 'Người có công hoặc thân nhân liệt sĩ được hỗ trợ theo Pháp lệnh 02/2020',
+    confirmedBy: 'Cơ quan có thẩm quyền đã cấp — mang bản sao có chứng thực',
+    url: null,
+    validity: null,
+    note: null,
+    noteType: null,
+    isNoForm: true
+  },
+  military_cert: {
+    section: 'Chứng minh đối tượng',
+    code: 'Theo hướng dẫn của Bộ Quốc phòng / Bộ Công an',
+    officialName: 'Giấy tờ xác nhận thuộc đối tượng lực lượng vũ trang nhân dân, cơ yếu',
+    title: 'Giấy tờ xác nhận thuộc lực lượng vũ trang / tổ chức cơ yếu',
+    who: 'Sĩ quan, quân nhân, hạ sĩ quan, công nhân công an, viên chức quốc phòng, người làm cơ yếu đang tại ngũ',
+    confirmedBy: 'Đơn vị quân đội / công an / cơ yếu nơi đang công tác cấp',
+    url: null,
+    validity: null,
+    note: 'Mẫu giấy tờ cho Nhóm 7 thực hiện theo hướng dẫn cụ thể của Bộ trưởng Bộ Quốc phòng hoặc Bộ trưởng Bộ Công an. Liên hệ đơn vị đang công tác để được cấp giấy xác nhận đúng mẫu.',
+    noteType: 'warn',
+    isNoForm: true
+  },
+  special_cert: {
+    section: 'Chứng minh đối tượng đặc biệt',
+    code: 'Giấy tờ theo từng trường hợp cụ thể (Điều 76 Luật Nhà ở 2023)',
+    officialName: 'Giấy tờ chứng minh thuộc đối tượng theo quy định tại Khoản 9, 10, 11 Điều 76',
+    title: 'Giấy tờ chứng minh thuộc nhóm đối tượng đặc biệt',
+    who: 'Tùy nhóm cụ thể',
+    confirmedBy: null,
+    url: null,
+    validity: null,
+    note: 'Nhóm 9 (trả nhà công vụ): Quyết định trả lại nhà ở công vụ có xác nhận của cơ quan quản lý.\nNhóm 10 (thu hồi đất): Quyết định thu hồi đất, quyết định phá dỡ nhà ở của cơ quan nhà nước có thẩm quyền.\nNhóm 11 (học sinh/sinh viên): Thẻ sinh viên hoặc giấy xác nhận đang theo học tại cơ sở giáo dục.',
+    noteType: 'special',
+    isNoForm: true
+  }
+};
+
+const INCOME_CONDITIONS = {
+  standard: `
+    <table class="income-tbl">
+      <thead>
+        <tr>
+          <th>Tình trạng hôn nhân / gia đình</th>
+          <th>Thu nhập tối đa/tháng</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Độc thân (chưa kết hôn)</td>
+          <td>≤ 20.000.000 đồng</td>
+        </tr>
+        <tr>
+          <td>Độc thân, đang nuôi con dưới 18 tuổi</td>
+          <td>≤ 30.000.000 đồng</td>
+        </tr>
+        <tr>
+          <td>Đã kết hôn (tổng thu nhập hai vợ chồng)</td>
+          <td>≤ 40.000.000 đồng</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="cond-note" style="margin-top:10px">Thu nhập được tính bình quân thực nhận trong <strong>12 tháng gần nhất</strong> trước thời điểm nộp hồ sơ (Điều 30 NĐ 100/2024, sửa đổi bởi NĐ 261/2025).</div>`,
+  military: `<div class="special-box">Nhóm 7 nộp Mẫu số 04 để xác nhận thu nhập, do đơn vị đang công tác xác nhận. Các quy định cụ thể về điều kiện thu nhập thực hiện theo hướng dẫn của <strong>Bộ trưởng Bộ Quốc phòng</strong> hoặc <strong>Bộ trưởng Bộ Công an</strong> tùy thuộc vào đơn vị công tác.</div>`,
+  poverty: `<div class="special-box">Hộ gia đình nghèo và cận nghèo (Nhóm 2, 3, 4) <strong>không cần kê khai thu nhập riêng</strong>. Giấy chứng nhận hộ nghèo hoặc hộ cận nghèo do UBND cấp xã cấp là đủ để chứng minh cả đối tượng lẫn điều kiện thu nhập theo Điều 30 NĐ 100/2024.</div>`,
+  meritorious: `<div class="special-box">Người có công với cách mạng và thân nhân liệt sĩ (Nhóm 1) <strong>được miễn điều kiện về thu nhập</strong>. Chỉ cần chứng minh thuộc đối tượng được hỗ trợ theo Pháp lệnh Ưu đãi người có công với cách mạng 2020.</div>`
+};
+
+// ─── STATE ────────────────────────────────────────────────────────────────────
+let selectedId = null;
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+function init() { renderGroups(); }
+
+function renderGroups() {
+  document.getElementById('groupList').innerHTML = GROUPS.map(g => {
+    const descLines = g.desc.split('\n').map(l => l.trim()).filter(Boolean);
+    return `
+    <div class="group-row${selectedId === g.id ? ' selected' : ''}" onclick="selectGroup('${g.id}')">
+      <div class="group-row-num"><div class="group-num-badge">${g.label.replace('Nhóm ','')}</div></div>
+      <div class="group-row-body">
+        <div class="group-row-label">${g.label}</div>
+        <div class="group-row-title">${g.title}</div>
+        <div class="group-row-desc">${descLines.join('<br>')}</div>
+      </div>
+      <div class="group-row-check">
+        <div class="check-circle">
+          <svg viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1"/></svg>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function selectGroup(id) {
+  selectedId = id;
+  const group = GROUPS.find(g => g.id === id);
+
+  renderGroups();
+
+  // Sticky
+  document.getElementById('stickyGroup').textContent = group.label;
+  document.getElementById('stickyName').textContent = group.title;
+  document.getElementById('stickyBar').classList.add('show');
+
+  // Show dividers
+  ['div1','div2','div3'].forEach(d => document.getElementById(d).classList.add('show'));
+
+  // Render
+  renderConditions(group);
+  renderDocs(group);
+
+  // Show steps
+  ['step2','step3','step4'].forEach(s => document.getElementById(s).classList.remove('hidden'));
+
+  // Scroll
+  setTimeout(() => document.getElementById('step2').scrollIntoView({behavior:'smooth',block:'start'}), 80);
+}
+
+function resetGroup() {
+  selectedId = null;
+  renderGroups();
+  document.getElementById('stickyBar').classList.remove('show');
+  ['div1','div2','div3'].forEach(d => document.getElementById(d).classList.remove('show'));
+  ['step2','step3','step4'].forEach(s => document.getElementById(s).classList.add('hidden'));
+  document.getElementById('step1').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// ─── CONDITIONS ───────────────────────────────────────────────────────────────
+function renderConditions(group) {
+  document.getElementById('step2Sub').textContent = group.label + ' — ' + group.title;
+  document.getElementById('condGrid').innerHTML = `
+    <div class="cond-card">
+      <div class="cond-card-head blue">Điều kiện về nhà ở</div>
+      <div class="cond-card-body">
+        <div class="cond-item"><div class="cond-bullet"></div><div>Chưa có nhà ở thuộc sở hữu của mình tại tỉnh, thành phố nơi có dự án tại thời điểm nộp hồ sơ đăng ký</div></div>
+        <div class="cond-item"><div class="cond-bullet"></div><div>Hoặc có nhà ở nhưng diện tích bình quân đầu người <strong>thấp hơn 15 m²/người</strong> (tính cho người đứng đơn, vợ/chồng, cha mẹ và con đăng ký thường trú tại đó)</div></div>
+        <div class="cond-note">Nếu người đứng đơn đã kết hôn, <strong>vợ/chồng cũng phải kê khai riêng</strong> theo cùng biểu mẫu điều kiện nhà ở (Điều 29 NĐ 100/2024).</div>
+      </div>
+    </div>
+    <div class="cond-card">
+      <div class="cond-card-head green">Điều kiện về thu nhập</div>
+      <div class="cond-card-body">${INCOME_CONDITIONS[group.incomeType]}</div>
+    </div>`;
+}
+
+// ─── DOCUMENTS ────────────────────────────────────────────────────────────────
+function renderDocs(group) {
+  let html = '';
+  let lastSection = '';
+
+  group.docs.forEach(key => {
+    const doc = DOCS[key];
+    if (!doc) return;
+
+    if (doc.section !== lastSection) {
+      html += `<div class="doc-section-title">${doc.section}</div>`;
+      lastSection = doc.section;
+    }
+
+    if (key === 'mau02_03') { html += buildMau0203(); return; }
+    if (key === 'mau04_05') { html += buildMau0405(); return; }
+    if (doc.isNoForm)       { html += buildNoForm(doc); return; }
+    html += buildDocCard(doc);
+  });
+
+  document.getElementById('docsWrap').innerHTML = html;
+}
+
+function buildDocCard(doc) {
+  const noteHTML = doc.note
+    ? `<div class="doc-note ${doc.noteType||'warn'}">${doc.note.replace(/\n/g,'<br>')}</div>` : '';
+  return `
+  <div class="doc-card">
+    <div class="doc-card-inner">
+      <div class="doc-card-top">
+        <div class="doc-card-left">
+          <div class="doc-form-code">${doc.code}</div>
+          <div class="doc-official-name">${doc.officialName}</div>
+          <div class="doc-title">${doc.title}</div>
+          <div class="doc-meta">
+            <span class="doc-tag">Người kê khai: ${doc.who}</span>
+            ${doc.confirmedBy ? `<span class="doc-tag blue">${doc.confirmedBy}</span>` : ''}
+            ${doc.validity ? `<span class="doc-tag amber">${doc.validity}</span>` : ''}
+          </div>
+        </div>
+        <div class="doc-actions">
+          <a class="btn-dl" href="${doc.url}" target="_blank" download>Tải mẫu</a>
+          ${doc.urlAlt ? `<a class="btn-dl-sec" href="${doc.urlAlt}" target="_blank" download>Bản khác</a>` : ''}
+        </div>
+      </div>
+      ${noteHTML}
+    </div>
+  </div>`;
+}
+
+function buildNoForm(doc) {
+  const noteHTML = doc.note
+    ? `<div class="doc-note ${doc.noteType||'info'}">${doc.note.replace(/\n/g,'<br>')}</div>` : '';
+  return `
+  <div class="doc-noform-card">
+    <div class="doc-form-code">${doc.code}</div>
+    <div class="doc-official-name" style="margin-bottom:6px">${doc.officialName}</div>
+    <div class="doc-title">${doc.title}</div>
+    <div class="doc-meta" style="margin-top:8px">
+      <span class="doc-tag">Người kê khai: ${doc.who}</span>
+      ${doc.confirmedBy ? `<span class="doc-tag blue">${doc.confirmedBy}</span>` : ''}
+    </div>
+    ${noteHTML}
+  </div>`;
+}
+
+function buildMau0203() {
+  return `
+  <div class="doc-card">
+    <div class="doc-card-inner">
+      <div class="doc-form-code">Mẫu số 02 hoặc Mẫu số 03 · Phụ lục I Thông tư 05/2024/TT-BXD</div>
+      <div class="doc-official-name">Giấy xác nhận điều kiện về nhà ở của người đăng ký mua, thuê mua nhà ở xã hội</div>
+      <div class="doc-title">Giấy xác nhận điều kiện về nhà ở</div>
+      <div class="doc-meta" style="margin-top:8px">
+        <span class="doc-tag">Người kê khai: Người đứng đơn — và vợ/chồng (nếu đã kết hôn)</span>
+        <span class="doc-tag blue">Xác nhận bởi UBND cấp xã nơi thường trú hoặc tạm trú</span>
+        <span class="doc-tag amber">6 tháng kể từ ngày được xác nhận</span>
+      </div>
+      <div class="doc-note warn" style="margin-top:10px">Nếu đã kết hôn, vợ/chồng phải điền và được xác nhận trên mẫu riêng.</div>
+    </div>
+    <div class="doc-split-row">
+      <div class="doc-split-col">
+        <div class="doc-split-label">Mẫu số 02 — Chưa có nhà ở</div>
+        <div class="doc-split-sub">Dùng khi chưa có nhà ở thuộc sở hữu tại tỉnh/thành phố nơi có dự án</div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">
+          <a class="btn-dl" href="https://attachment.vnecdn.net/2025/11/20/Mau-03-Giay-xac-nhan-dieu-kien-nha-o-chua-co-nha-o-doc_1763629393%5B1700000404%5D.doc" target="_blank" download>Tải Mẫu 02</a>
+          <a class="btn-dl-sec" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/NTMH/14102025/Mau-02-pl1-noxh.doc" target="_blank" download>Bản khác</a>
+        </div>
+      </div>
+      <div class="doc-split-col">
+        <div class="doc-split-label">Mẫu số 03 — Có nhà nhưng diện tích dưới 15 m²/người</div>
+        <div class="doc-split-sub">Dùng khi đã có nhà nhưng diện tích bình quân thấp hơn mức tối thiểu</div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">
+          <a class="btn-dl" href="https://attachment.vnecdn.net/2025/11/20/Mau-04-Giay-xac-nhan-dieu-kien-nha-o-dien-tich-khong-du-doc.doc" target="_blank" download>Tải Mẫu 03</a>
+          <a class="btn-dl-sec" href="https://cdn.thuvienphapluat.vn//phap-luat/2022-2/NTMH/18022025/mau-so-03-Pl1.doc" target="_blank" download>Bản khác</a>
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function buildMau0405() {
+  return `
+  <div class="doc-card">
+    <div class="doc-card-inner">
+      <div class="doc-form-code">Mẫu số 04 hoặc Mẫu số 05 · Phụ lục I Thông tư 05/2024/TT-BXD</div>
+      <div class="doc-official-name">Giấy xác nhận điều kiện về thu nhập của người đăng ký mua, thuê mua nhà ở xã hội</div>
+      <div class="doc-title">Giấy xác nhận điều kiện về thu nhập</div>
+      <div class="doc-meta" style="margin-top:8px">
+        <span class="doc-tag">Người kê khai: Người đứng đơn (và vợ/chồng nếu đã kết hôn)</span>
+        <span class="doc-tag amber">6 tháng. Thu nhập tính trong 12 tháng gần nhất</span>
+      </div>
+    </div>
+    <div class="doc-split-row">
+      <div class="doc-split-col">
+        <div class="doc-split-label">Mẫu số 04 — Có hợp đồng lao động / hưởng lương</div>
+        <div class="doc-split-sub">Xác nhận bởi cơ quan, đơn vị, doanh nghiệp nơi làm việc</div>
+        <a class="btn-dl" href="https://attachment.vnecdn.net/2025/11/20/Mau-05-Giay-xac-nhan-dieu-kien-thu-nhap-co-HDLD-doc.doc" target="_blank" download>Tải Mẫu 04</a>
+      </div>
+      <div class="doc-split-col">
+        <div class="doc-split-label">Mẫu số 05 — Không có hợp đồng lao động / không hưởng lương hưu</div>
+        <div class="doc-split-sub">Xác nhận bởi Công an cấp xã nơi thường trú, tạm trú hoặc nơi ở hiện tại</div>
+        <a class="btn-dl" href="https://attachment.vnecdn.net/2025/11/20/Mau-06-Giay-xac-nhan-dieu-kien-thu-nhap-khong-co-HDLD-doc.doc" target="_blank" download>Tải Mẫu 05</a>
+      </div>
+    </div>
+  </div>`;
+}
+
+init();
+</script>
+</body>
+</html>

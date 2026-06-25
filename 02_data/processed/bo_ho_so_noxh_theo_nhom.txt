@@ -1,0 +1,285 @@
+================================================================================
+BỘ HỒ SƠ MUA NHÀ Ở XÃ HỘI (NOXH) THEO TỪNG NHÓM ĐỐI TƯỢNG
+Bản tổng hợp để Legal review tính chính xác
+Cập nhật: 16/06/2026
+================================================================================
+
+MỤC ĐÍCH
+- Liệt kê đầy đủ TÊN từng giấy tờ mỗi nhóm đối tượng cần chuẩn bị khi MUA / THUÊ MUA NOXH.
+- Legal đối chiếu tính chính xác trước khi đưa vào product (web hướng dẫn + Tally form).
+- Mọi điểm chưa chắc chắn được đánh dấu [CHỜ LEGAL].
+
+--------------------------------------------------------------------------------
+CĂN CỨ PHÁP LÝ ĐÃ DÙNG (đã đối chiếu nguồn 16/06/2026)
+--------------------------------------------------------------------------------
+- Luật Nhà ở 2023 (Luật số 27/2023/QH15) — Điều 76 (đối tượng), Điều 78 (ai được mua/thuê mua).
+- Nghị định 100/2024/NĐ-CP — hướng dẫn Luật Nhà ở về NOXH.
+- Nghị định 261/2025/NĐ-CP — sửa đổi NĐ 100/2024 (ban hành Mẫu 01 Đơn đăng ký).
+- Nghị định 136/2026/NĐ-CP — NÂNG TRẦN THU NHẬP toàn quốc, hiệu lực 07/04/2026.
+- Thông tư 05/2024/TT-BXD — ban hành biểu mẫu gốc.
+- Thông tư 32/2025/TT-BXD — sửa đổi TT 05/2024 (ban hành Mẫu 01a, Mẫu 04).
+- Thông tư 08/2026/TT-BXD — hiệu lực 15/02/2026, THAY THẾ Mẫu 01, Mẫu 02, Mẫu 05.
+- Quyết định 14/2026/QĐ-UBND TP.HCM (28/03/2026) — hệ số điều chỉnh thu nhập tại HCM.
+- Thông tư 56/2024/TT-BCA (Công an) / Thông tư 94/2024/TT-BQP (Quân đội) — mẫu đối tượng nhóm 7.
+- Pháp lệnh Ưu đãi người có công với cách mạng 2020 (02/2020/UBTVQH14).
+
+LƯU Ý ÁP DỤNG: Bản tổng hợp này dùng biểu mẫu MỚI NHẤT (TT 08/2026 + TT 32/2025).
+File doc_noxh.html hiện tại đang dùng biểu mẫu CŨ (TT 05/2024) — cần cập nhật theo file này.
+
+================================================================================
+PHẦN A — KHUNG HỒ SƠ CHUNG (áp dụng cho MỌI nhóm được mua)
+================================================================================
+Mỗi bộ hồ sơ gồm 4 lớp. Lớp (1) và (4) giống nhau cho mọi nhóm;
+lớp (2) và (3) khác nhau theo nhóm (xem Phần B).
+
+(1) ĐƠN ĐĂNG KÝ
+    - Tên: "Đơn đăng ký mua, thuê mua nhà ở xã hội"
+    - Biểu mẫu: Mẫu số 01 — Phụ lục Nghị định 261/2025/NĐ-CP
+    - Người kê khai: người đứng đơn tự kê khai, tự ký.
+
+(2) GIẤY TỜ CHỨNG MINH ĐỐI TƯỢNG  -> khác theo nhóm (Phần B)
+
+(3) GIẤY TỜ CHỨNG MINH THU NHẬP    -> khác theo nhóm (Phần B)
+
+(4) GIẤY TỜ CHỨNG MINH ĐIỀU KIỆN NHÀ Ở (chọn 1 trong 2 trường hợp)
+    - TRƯỜNG HỢP CHƯA CÓ NHÀ Ở:
+        Tên: "Giấy xác nhận về điều kiện nhà ở (trường hợp chưa có nhà ở)"
+        Biểu mẫu: Mẫu số 02 — Phụ lục Thông tư 08/2026/TT-BXD
+        Cơ quan xác nhận: VĂN PHÒNG / CHI NHÁNH VĂN PHÒNG ĐĂNG KÝ ĐẤT ĐAI
+        (cơ quan cấp Giấy chứng nhận QSDĐ) tại tỉnh/thành phố có dự án.
+        >> KHÔNG phải UBND cấp xã.
+    - TRƯỜNG HỢP CÓ NHÀ NHƯNG DIỆN TÍCH < 15 m²/người:
+        Tên: "Giấy xác nhận có nhà ở nhưng diện tích bình quân dưới 15 m² sàn/người"
+        Biểu mẫu: Mẫu số 03 — Phụ lục I Thông tư 05/2024/TT-BXD
+        Cơ quan xác nhận: UBND CẤP XÃ nơi người kê khai đăng ký thường trú.
+
+QUY TẮC VỢ/CHỒNG (áp dụng mọi nhóm):
+- Nếu người đứng đơn ĐÃ KẾT HÔN, vợ/chồng cũng phải kê khai RIÊNG:
+    + Giấy điều kiện nhà ở: Mẫu 02 (kể cả khi người đứng đơn dùng Mẫu 03).
+    + Giấy thu nhập: Mẫu 01a / 04 / 05 tùy tình trạng làm việc của vợ/chồng.
+
+THỜI HẠN GIẤY XÁC NHẬN:
+- Các giấy xác nhận điều kiện có giá trị 12 THÁNG kể từ ngày xác nhận.
+  (KHÔNG phải 6 tháng — file HTML cũ ghi sai.)
+- Thu nhập tính bình quân trong 12 tháng liên tục.
+- TT 08/2026 đã BỎ yêu cầu nộp bảng lương 12 tháng.
+
+================================================================================
+PHẦN B — BỘ HỒ SƠ THEO TỪNG NHÓM ĐƯỢC MUA / THUÊ MUA
+(theo Điều 78: chỉ nhóm 1, 4, 5, 6, 7, 8, 9, 10 được mua/thuê mua)
+================================================================================
+
+--------------------------------------------------------------------------------
+NHÓM 1 — Người có công với cách mạng, thân nhân liệt sĩ (khoản 1 Điều 76)
+--------------------------------------------------------------------------------
+(1) Đơn đăng ký: Mẫu 01 (Phụ lục NĐ 261/2025).
+(2) Chứng minh đối tượng:
+    Bản sao CÓ CHỨNG THỰC một trong:
+      - Giấy tờ chứng minh người có công với cách mạng; HOẶC
+      - Giấy chứng nhận thân nhân liệt sĩ
+    (theo Pháp lệnh Ưu đãi người có công với cách mạng 2020).
+(3) Chứng minh thu nhập: MIỄN — người đứng đơn KHÔNG phải chứng minh thu nhập của mình.
+(4) Nhà ở: Mẫu 02 (chưa có nhà) hoặc Mẫu 03 (có nhà <15m²).
+[CHỜ LEGAL] Nếu đã kết hôn: vợ/chồng có phải nộp giấy thu nhập không, và thu nhập đó
+            có ảnh hưởng kết quả eligibility hay chỉ là nghĩa vụ kê khai?
+
+--------------------------------------------------------------------------------
+NHÓM 4 — Hộ gia đình nghèo, cận nghèo tại khu vực ĐÔ THỊ (khoản 4 Điều 76)
+--------------------------------------------------------------------------------
+(1) Đơn đăng ký: Mẫu 01 (Phụ lục NĐ 261/2025).
+(2)+(3) Chứng minh đối tượng VÀ thu nhập (gộp 1 giấy):
+    Bản sao CÓ CHỨNG THỰC "Giấy chứng nhận hộ nghèo" hoặc "hộ cận nghèo" còn hiệu lực
+    (do UBND cấp xã cấp). Giấy này thay cho cả chứng minh đối tượng lẫn thu nhập.
+(4) Nhà ở: Mẫu 02 (chưa có nhà) hoặc Mẫu 03 (có nhà <15m²).
+[CHỜ LEGAL] Nếu đã kết hôn: giấy hộ nghèo/cận nghèo đã thay luôn giấy thu nhập của
+            vợ/chồng, hay vợ/chồng vẫn phải nộp mẫu thu nhập riêng?
+
+--------------------------------------------------------------------------------
+NHÓM 5 — Người thu nhập thấp tại khu vực ĐÔ THỊ (khoản 5 Điều 76)
+=> TÁCH 2 TRƯỜNG HỢP
+--------------------------------------------------------------------------------
+TRƯỜNG HỢP 5A — Có hợp đồng lao động / hưởng lương / hưởng lương hưu:
+(1) Đơn đăng ký: Mẫu 01.
+(2)+(3) Đối tượng VÀ thu nhập (gộp 1 giấy):
+    Tên: "Giấy xác nhận về đối tượng và điều kiện thu nhập"
+    Biểu mẫu: Mẫu số 01a — Phụ lục I Thông tư 32/2025/TT-BXD
+    Cơ quan xác nhận:
+      - Đang làm việc: cơ quan / đơn vị / doanh nghiệp nơi làm việc.
+      - Đã nghỉ hưu: cơ quan BHXH đang chi trả lương hưu, HOẶC UBND cấp xã nơi
+        thường trú/tạm trú/nơi ở hiện tại.
+(4) Nhà ở: Mẫu 02 hoặc Mẫu 03.
+
+TRƯỜNG HỢP 5B — KHÔNG có hợp đồng lao động VÀ KHÔNG hưởng lương hưu:
+(1) Đơn đăng ký: Mẫu 01.
+(2) Chứng minh đối tượng:
+    Tên: "Giấy xác nhận về đối tượng được hưởng chính sách hỗ trợ về NOXH"
+    Biểu mẫu: Mẫu số 01 — Phụ lục Thông tư 08/2026/TT-BXD
+(3) Chứng minh thu nhập:
+    Tên: "Giấy tờ chứng minh điều kiện về thu nhập (không có HĐLĐ)"
+    Biểu mẫu: Mẫu số 05 — Phụ lục Thông tư 08/2026/TT-BXD
+    Cơ quan xác nhận: CÔNG AN CẤP XÃ nơi thường trú/tạm trú/nơi ở hiện tại.
+(4) Nhà ở: Mẫu 02 hoặc Mẫu 03.
+
+LƯU Ý LỖI THƯỜNG GẶP: KHÔNG dùng "có HĐLĐ -> Mẫu 04". Mẫu 04 chỉ dành cho nhóm 7.
+   Đúng là: có HĐLĐ/hưởng lương -> Mẫu 01a; không HĐLĐ, không lương hưu -> Mẫu 05.
+
+--------------------------------------------------------------------------------
+NHÓM 6 — Công nhân, người lao động tại DN / HTX / liên hiệp HTX (khoản 6 Điều 76)
+--------------------------------------------------------------------------------
+(1) Đơn đăng ký: Mẫu 01.
+(2)+(3) Đối tượng VÀ thu nhập (gộp 1 giấy):
+    Biểu mẫu: Mẫu số 01a — Phụ lục I Thông tư 32/2025/TT-BXD
+    Cơ quan xác nhận: doanh nghiệp / HTX / đơn vị nơi làm việc.
+(4) Nhà ở: Mẫu 02 hoặc Mẫu 03.
+LƯU Ý: KHÔNG dùng Mẫu 04 cho nhóm 6.
+
+--------------------------------------------------------------------------------
+NHÓM 7 — Lực lượng vũ trang nhân dân, tổ chức cơ yếu (khoản 7 Điều 76)
+--------------------------------------------------------------------------------
+(1) Đơn đăng ký: Mẫu 01.
+(2) Chứng minh đối tượng (theo lực lượng):
+      - Trong Công an nhân dân: Mẫu NOCA — ban hành kèm Thông tư 56/2024/TT-BCA.
+      - Trong Quân đội nhân dân: Mẫu (Phụ lục) — ban hành kèm Thông tư 94/2024/TT-BQP.
+(3) Chứng minh thu nhập:
+    Tên: "Giấy xác nhận điều kiện về thu nhập"
+    Biểu mẫu: Mẫu số 04 — Phụ lục I Thông tư 32/2025/TT-BXD
+    Cơ quan xác nhận: cơ quan / đơn vị nơi công tác.
+(4) Nhà ở: Mẫu 02 hoặc Mẫu 03.
+LƯU Ý: Mẫu 04 CHỈ dùng cho nhóm 7.
+[CHỜ LEGAL] Xác nhận chính xác tên giấy đối tượng của Bộ Công an / Bộ Quốc phòng
+            (không để product ghi chung chung "liên hệ đơn vị").
+
+--------------------------------------------------------------------------------
+NHÓM 8 — Cán bộ, công chức, viên chức (khoản 8 Điều 76)
+--------------------------------------------------------------------------------
+(1) Đơn đăng ký: Mẫu 01.
+(2)+(3) Đối tượng VÀ thu nhập (gộp 1 giấy):
+    Biểu mẫu: Mẫu số 01a — Phụ lục I Thông tư 32/2025/TT-BXD
+    Cơ quan xác nhận: cơ quan / đơn vị nơi công tác.
+(4) Nhà ở: Mẫu 02 hoặc Mẫu 03.
+LƯU Ý: KHÔNG dùng Mẫu 04 cho nhóm 8.
+
+--------------------------------------------------------------------------------
+NHÓM 9 — Người đã trả lại nhà ở công vụ (khoản 9 Điều 76)
+--------------------------------------------------------------------------------
+(1) Đơn đăng ký: Mẫu 01.
+(2) Chứng minh đối tượng:
+    Tên: "Giấy xác nhận về đối tượng được hưởng chính sách hỗ trợ về NOXH"
+    Biểu mẫu: Mẫu số 01 — Phụ lục Thông tư 08/2026/TT-BXD
+    Cơ quan xác nhận: cơ quan quản lý nhà ở công vụ.
+    (Quyết định/biên bản trả lại nhà công vụ là tài liệu CĂN CỨ cho cơ quan xác nhận,
+     KHÔNG hiển thị như giấy thay thế Mẫu 01.)
+(3) Chứng minh thu nhập: KHÔNG thuộc nhóm phải xét thu nhập của chính mình.
+(4) Nhà ở: Mẫu 02 hoặc Mẫu 03.
+
+--------------------------------------------------------------------------------
+NHÓM 10 — Bị thu hồi đất, giải tỏa, phá dỡ nhà, chưa được bồi thường bằng
+          nhà ở/đất ở (khoản 10 Điều 76)
+--------------------------------------------------------------------------------
+(1) Đơn đăng ký: Mẫu 01.
+(2) Chứng minh đối tượng:
+    Biểu mẫu: Mẫu số 01 — Phụ lục Thông tư 08/2026/TT-BXD
+    (Quyết định thu hồi đất / giải tỏa / phá dỡ + phương án bồi thường là tài liệu
+     CĂN CỨ cho cơ quan xác nhận.)
+(3) Chứng minh thu nhập: KHÔNG thuộc nhóm phải xét thu nhập của chính mình.
+(4) Nhà ở: Mẫu 02 hoặc Mẫu 03.
+[CHỜ LEGAL] Mâu thuẫn cơ quan xác nhận Mẫu 01:
+    - Phụ lục Thông tư ghi: UBND cấp xã nơi người kê khai thường trú/tạm trú/ở hiện tại.
+    - Trình tự bán NOXH trong Nghị định ghi: UBND cấp xã NƠI BỊ THU HỒI ĐẤT.
+    Cần Legal chốt cách áp dụng thực tế tại TP.HCM. (Nghị định hiệu lực cao hơn.)
+
+================================================================================
+PHẦN C — CÁC NHÓM KHÔNG ĐƯA VÀO FLOW "MUA"
+================================================================================
+- NHÓM 11 — Học sinh, sinh viên: chỉ thuộc chính sách THUÊ chỗ ở/NOXH, KHÔNG mua/thuê mua
+  theo Điều 78. => LOẠI khỏi flow mua.
+
+- NHÓM 2 — Hộ nghèo/cận nghèo NÔNG THÔN.
+  NHÓM 3 — Hộ nghèo/cận nghèo nông thôn vùng thiên tai/biến đổi khí hậu.
+  Điều 78 KHÔNG mặc định cho 2 nhóm này mua. NHƯNG: UBND cấp tỉnh CÓ THỂ quy định
+  hỗ trợ bán/cho thuê mua cho nhóm 2, 3 tùy điều kiện địa phương.
+  [CHỜ LEGAL] TP.HCM (mới) có bật mua/thuê mua cho nhóm 2, 3 không?
+              - Nếu KHÔNG: loại khỏi flow mua.
+              - Nếu CÓ: hồ sơ giống Nhóm 4 (giấy hộ nghèo/cận nghèo + Mẫu 02/03).
+
+- "Người có từ 2 con đẻ trở lên": KHÔNG phải nhóm đối tượng độc lập được mua.
+  Người đó vẫn phải thuộc một trong nhóm 1/4/5/6/7/8/9/10 và đáp ứng điều kiện tương ứng.
+
+================================================================================
+PHẦN D — ĐIỀU KIỆN THU NHẬP (số liệu cần Legal chốt trước khi build Tally)
+================================================================================
+Áp dụng cho các nhóm CÓ xét thu nhập (5, 6, 8; nhóm 7 theo hướng dẫn riêng).
+Nhóm 1, 4, 9, 10 không xét thu nhập của chính người đứng đơn.
+
+CÓ HAI NGUỒN SỐ LIỆU LỆCH NHAU -> [CHỜ LEGAL]:
+  1) Nghị định 136/2026/NĐ-CP (toàn quốc, hiệu lực 07/04/2026):
+       - Độc thân:                         <= 25 triệu/tháng
+       - Độc thân nuôi con chưa thành niên:<= 35 triệu/tháng
+       - Vợ chồng (tổng):                  <= 50 triệu/tháng
+  2) Quyết định 14/2026/QĐ-UBND TP.HCM (28/03/2026):
+       - Độc thân:                         <= 25 triệu/tháng
+       - Độc thân nuôi con:                <= 37,5 triệu/tháng
+       - Vợ chồng (tổng):                  <= 50 triệu/tháng
+       - Hộ có >= 3 người phụ thuộc:        27 / 40,5 / 54 triệu
+
+LỆCH Ở BẬC GIỮA: 35 (NĐ 136) vs 37,5 (QĐ HCM).
+QĐ 14 HCM ban hành TRƯỚC NĐ 136. Cần Legal chốt: sau 07/04/2026, TP.HCM dùng số nào?
+QUY TẮC CỨNG (giữ nguyên từ logic form): "không chắc" KHÔNG bao giờ ra kết quả "ĐỦ".
+
+================================================================================
+PHẦN E — DANH SÁCH CÂU HỎI CẦN LEGAL XÁC NHẬN
+================================================================================
+1. Ngưỡng thu nhập áp dụng tại TP.HCM sau 07/04/2026: NĐ 136 (25/35/50) hay
+   QĐ 14 HCM (25/37,5/50)?
+2. Nhóm 2, 3 — TP.HCM có cho mua/thuê mua không (Điều 78 trao quyền cho UBND tỉnh)?
+3. Nhóm 1, 4, 9, 10 đã kết hôn: vợ/chồng phải nộp mẫu thu nhập nào, và thu nhập đó
+   có ảnh hưởng eligibility hay chỉ là nghĩa vụ kê khai?
+4. Nhóm 10: cơ quan xác nhận Mẫu 01 là UBND nơi cư trú hay UBND nơi bị thu hồi đất?
+5. Nhóm 7: tên chính xác giấy chứng minh đối tượng của Bộ Công an / Bộ Quốc phòng.
+6. Giấy hành chính chung (CCCD, giấy đăng ký kết hôn / xác nhận độc thân, thông tin
+   cư trú): xếp là "hồ sơ pháp lý bắt buộc chung" hay "tài liệu chủ đầu tư có thể
+   yêu cầu bổ sung tùy dự án"?
+
+================================================================================
+PHẦN F — BẢNG TÓM TẮT NHANH (mapping nhóm -> giấy tờ)
+================================================================================
+Nhóm 1  (Người có công)      : Đơn 01 + Giấy người có công/thân nhân LS (chứng thực) + Nhà ở 02/03
+Nhóm 4  (Hộ nghèo đô thị)    : Đơn 01 + Giấy hộ nghèo/cận nghèo (chứng thực) + Nhà ở 02/03
+Nhóm 5A (có HĐLĐ/lương hưu)  : Đơn 01 + Mẫu 01a + Nhà ở 02/03
+Nhóm 5B (không HĐLĐ/lương hưu): Đơn 01 + Mẫu 01 (TT08) + Mẫu 05 + Nhà ở 02/03
+Nhóm 6  (Công nhân/NLĐ)      : Đơn 01 + Mẫu 01a + Nhà ở 02/03
+Nhóm 7  (Lực lượng vũ trang) : Đơn 01 + Giấy đối tượng (TT 56/2024-BCA hoặc 94/2024-BQP) + Mẫu 04 + Nhà ở 02/03
+Nhóm 8  (CBCCVC)             : Đơn 01 + Mẫu 01a + Nhà ở 02/03
+Nhóm 9  (Trả nhà công vụ)    : Đơn 01 + Mẫu 01 (TT08) xác nhận đối tượng + Nhà ở 02/03
+Nhóm 10 (Thu hồi đất)        : Đơn 01 + Mẫu 01 (TT08) xác nhận đối tượng + Nhà ở 02/03
+Nhóm 2, 3                    : [CHỜ LEGAL] — chỉ vào flow mua nếu UBND TP.HCM cho phép
+Nhóm 11 (Học sinh/SV)        : KHÔNG vào flow mua (chỉ thuê)
+* Mọi nhóm: nếu đã kết hôn, vợ/chồng kê khai thêm Mẫu 02 (nhà ở) + mẫu thu nhập tương ứng.
+
+================================================================================
+GHI CHÚ TÊN BIỂU MẪU (tránh nhầm "Mẫu 01")
+================================================================================
+- Mẫu 01 (Phụ lục NĐ 261/2025)       = ĐƠN đăng ký mua NOXH.
+- Mẫu 01 (Phụ lục TT 08/2026)        = Giấy xác nhận ĐỐI TƯỢNG (nhóm 5B, 9, 10, 11).
+- Mẫu 01a (Phụ lục I TT 32/2025)     = Giấy xác nhận ĐỐI TƯỢNG + THU NHẬP (nhóm 5A, 6, 8).
+- Mẫu 02 (Phụ lục TT 08/2026)        = Điều kiện NHÀ Ở (chưa có nhà). XN bởi VP đăng ký đất đai.
+- Mẫu 03 (Phụ lục I TT 05/2024)      = Điều kiện NHÀ Ở (có nhà <15m²). XN bởi UBND cấp xã.
+- Mẫu 04 (Phụ lục I TT 32/2025)      = THU NHẬP — CHỈ nhóm 7.
+- Mẫu 05 (Phụ lục TT 08/2026)        = THU NHẬP (không có HĐLĐ). XN bởi Công an cấp xã.
+=> Trong product/file tải về: luôn ghi TÊN ĐẦY ĐỦ + NGUỒN, không chỉ ghi "Mẫu 01".
+
+================================================================================
+NGUỒN THAM CHIẾU
+================================================================================
+- Điều 76 & 78 Luật Nhà ở 2023: https://thuviennhadat.vn/vbpl/luat-nha-o-27-2023-qh15-528669.html
+- NĐ 136/2026 (trần thu nhập 25/35/50, 07/04/2026):
+  https://baochinhphu.vn/chinh-thuc-nang-muc-tran-thu-nhap-duoc-mua-nha-o-xa-hoi-len-25-trieu-dong-thang-tu-7-4-2026-102260408114223058.htm
+- TT 08/2026 thay 3 mẫu, giá trị 12 tháng (15/02/2026):
+  https://luatvietnam.vn/tin-van-ban-moi/thay-the-3-mau-giay-chung-minh-dieu-kien-huong-chinh-sach-nha-o-xa-hoi-tu-15-02-2026-186-107231-article.html
+- Trọn bộ hồ sơ + mapping mẫu theo nhóm (TT 08/2026, TT 32/2025, NĐ 261/2025):
+  https://thuviennhadat.vn/phap-luat/tai-tron-bo-ho-so-mua-nha-o-xa-hoi-moi-nhat-2026-thong-tu-08-2026-thong-tu-32-2025-thong-tu-05-2024-736285.html
+- Mẫu 02 xác nhận tại Văn phòng đăng ký đất đai:
+  https://thuvienphapluat.vn/phap-luat/giay-xac-nhan-ve-dieu-kien-nha-o-xin-o-dau-huong-dan-cach-ghi-mau-02-giay-xac-nhan-ve-dieu-kien-nha-563453-259494.html
+- QĐ 14/2026/QĐ-UBND TP.HCM (hệ số thu nhập):
+  https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/quyet-dinh/so/14-2026-qd-ubnd/ngay/28-03-2026/49167
+================================================================================

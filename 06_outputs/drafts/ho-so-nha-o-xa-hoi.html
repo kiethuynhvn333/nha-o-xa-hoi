@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hồ sơ mua/thuê mua Nhà ở xã hội — theo nhóm đối tượng</title>
+<style>
+  :root{
+    --bg:#f5f6f8; --card:#fff; --ink:#1c2430; --muted:#5c6b7a;
+    --line:#e2e6ec; --brand:#0b6b4f; --brand-soft:#e6f3ee; --warn:#9a5b00;
+    --warn-bg:#fff5e0; --warn-line:#f0d28a; --chip:#eef1f5;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+       background:var(--bg);color:var(--ink);line-height:1.5;font-size:15px}
+  .wrap{max-width:920px;margin:0 auto;padding:24px 16px 80px}
+  header h1{font-size:22px;margin:0 0 6px}
+  header p{margin:4px 0;color:var(--muted)}
+  .disclaimer{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:10px;
+       padding:12px 14px;margin:16px 0;font-size:13.5px;color:#5b4300}
+  .disclaimer b{color:#7a5a00}
+  .legend{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+  .chip{background:var(--chip);border-radius:20px;padding:3px 11px;font-size:12.5px;color:var(--muted)}
+  .chip.dot-form::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;
+       background:var(--brand);margin-right:6px;vertical-align:middle}
+  .chip.dot-self::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;
+       background:#b9802e;margin-right:6px;vertical-align:middle}
+  .group{background:var(--card);border:1px solid var(--line);border-radius:14px;
+       padding:18px 18px 8px;margin:16px 0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+  .group h2{font-size:18px;margin:0 0 2px}
+  .group .gtag{font-size:12.5px;color:var(--brand);font-weight:600}
+  .group .gnote{font-size:13.5px;color:var(--muted);margin:8px 0 14px}
+  .group .gnote .income{display:inline-block;background:var(--brand-soft);color:var(--brand);
+       border-radius:6px;padding:1px 8px;font-weight:600;font-size:12.5px}
+  .openall{display:inline-flex;align-items:center;gap:6px;background:var(--brand);color:#fff;
+       border:none;border-radius:9px;padding:9px 14px;font-size:13.5px;font-weight:600;
+       cursor:pointer;margin-bottom:12px}
+  .openall:hover{background:#095a42}
+  .doc{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-top:1px solid var(--line)}
+  .doc:first-of-type{border-top:none}
+  .doc .meta{flex:1;min-width:0}
+  .doc .name{font-weight:600;font-size:14.5px}
+  .doc .sub{font-size:12.8px;color:var(--muted);margin-top:2px}
+  .doc .src{font-size:11.8px;color:#8a96a3;margin-top:3px}
+  .btn{white-space:nowrap;border-radius:8px;padding:8px 13px;font-size:13px;font-weight:600;
+       text-decoration:none;cursor:pointer;border:1px solid transparent}
+  .btn-dl{background:var(--brand-soft);color:var(--brand);border-color:#bfe0d3}
+  .btn-dl:hover{background:#d6ebe2}
+  .btn-self{background:#fff;color:#b9802e;border-color:#e7cfa6}
+  .btn-self:hover{background:#fdf6ea}
+  .warnline{font-size:12px;color:var(--warn);background:var(--warn-bg);border:1px solid var(--warn-line);
+       border-radius:6px;padding:5px 8px;margin-top:6px}
+  footer{margin-top:30px;font-size:12.5px;color:#8a96a3;border-top:1px solid var(--line);padding-top:16px}
+  footer a{color:var(--brand)}
+  .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#1c2430;color:#fff;
+       padding:10px 16px;border-radius:8px;font-size:13px;opacity:0;transition:.3s;pointer-events:none;z-index:50}
+  .toast.show{opacity:1}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Hồ sơ mua / thuê mua Nhà ở xã hội</h1>
+    <p>Danh mục biểu mẫu cần chuẩn bị theo từng nhóm đối tượng — khu vực TP.HCM (gồm TP.HCM cũ, Bình Dương cũ, Bà Rịa – Vũng Tàu cũ).</p>
+  </header>
+
+  <div class="disclaimer">
+    <b>Lưu ý quan trọng:</b> Đây là bản tổng hợp tham khảo sơ bộ, <b>chưa thay thế việc xét duyệt</b> của cơ quan nhà nước, chủ đầu tư hay đơn vị có thẩm quyền, và <b>đang chờ Legal xác nhận</b>. Một số nội dung dẫn chiếu Thông tư 08/2026/TT-BXD (mới) chỉ có sẵn dưới dạng PDF gốc của Chính phủ — biểu mẫu nằm ở vài trang cụ thể trong file (đã ghi chú số trang). Vui lòng đối chiếu lại với cán bộ tiếp nhận hồ sơ trước khi nộp.
+  </div>
+
+  <div class="legend">
+    <span class="chip dot-form">Có biểu mẫu tải sẵn</span>
+    <span class="chip dot-self">Giấy tờ cấp theo cá nhân / vụ việc — không có mẫu trống</span>
+  </div>
+
+  <div id="groups"></div>
+
+  <footer>
+    <p><b>Nguồn biểu mẫu:</b> Cổng thông tin văn bản Chính phủ (datafiles.chinhphu.vn, vanban.chinhphu.vn), Công báo TP.HCM, và bản biểu mẫu trống do Thư Viện Pháp Luật tổng hợp.</p>
+    <p><b>Căn cứ pháp lý:</b> Điều 76 Luật Nhà ở 2023 · Nghị định 261/2025/NĐ-CP · Thông tư 08/2026/TT-BXD · Thông tư 32/2025/TT-BXD · Thông tư 05/2024/TT-BXD · Thông tư 56/2024/TT-BCA · Thông tư 94/2024/TT-BQP · Nghị định 136/2026/NĐ-CP · Quyết định 14/2026/QĐ-UBND TP.HCM.</p>
+    <p>Khi bấm nút tải, trình duyệt có thể hỏi cho phép mở nhiều tab — hãy chọn "Cho phép". File mở từ link chính thức nên cần có kết nối internet.</p>
+  </footer>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ---------- Thư viện biểu mẫu (link chính thức) ---------- */
+const FORMS = {
+  don01: {
+    name: "Mẫu 01 — Đơn đăng ký mua, thuê mua nhà ở xã hội",
+    sub: "Bắt buộc cho mọi nhóm. Theo Nghị định 261/2025/NĐ-CP.",
+    src: "Biểu mẫu trống (.docx) — TVPL tổng hợp",
+    url: "https://cdn.thuvienphapluat.vn//phap-luat/2022-2/NTMH/13102025/don-mua-nha-o-xa-hoi-2025.docx",
+    warn: "Mẫu 01 vẫn in ngưỡng thu nhập cũ (20/30/40 triệu). Ngưỡng đã thay đổi theo NĐ 136/2026 & QĐ 14/2026 TP.HCM — người kê khai cần tự điều chỉnh theo mức mới."
+  },
+  m01_dt: {
+    name: "Mẫu 01 (TT 08/2026) — Giấy xác nhận thuộc nhóm đối tượng",
+    sub: "Dùng để chứng minh đối tượng (không xét thu nhập qua mẫu này).",
+    src: "PDF Thông tư 08/2026/TT-BXD — xem trang 1–2 của phụ lục",
+    url: "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/08-bxd-kem.pdf"
+  },
+  m01a: {
+    name: "Mẫu 01a (TT 32/2025) — Xác nhận đối tượng & thu nhập",
+    sub: "Cơ quan/đơn vị nơi làm việc xác nhận.",
+    src: "Biểu mẫu trống (.docx) — TVPL tổng hợp",
+    url: "https://cdn.thuvienphapluat.vn//phap-luat/2022-2/NTMH/15112025/mau-01a-noxh.docx"
+  },
+  m02: {
+    name: "Mẫu 02 (TT 08/2026) — Xác nhận chưa có nhà ở",
+    sub: "Chọn mẫu này NẾU chưa sở hữu nhà tại nơi có dự án. Văn phòng/Chi nhánh VP đăng ký đất đai xác nhận.",
+    src: "PDF Thông tư 08/2026/TT-BXD — xem trang 3–4 của phụ lục",
+    url: "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/08-bxd-kem.pdf"
+  },
+  m03: {
+    name: "Mẫu 03 (TT 05/2024) — Xác nhận có nhà nhưng < 15 m²/người",
+    sub: "Chọn mẫu này NẾU đã có nhà nhưng diện tích bình quân dưới 15 m² sàn/người. UBND cấp xã nơi thường trú xác nhận.",
+    src: "Biểu mẫu trống (.doc) — TVPL tổng hợp",
+    url: "https://cdn.thuvienphapluat.vn//phap-luat/2022-2/NTMH/18022025/mau-so-03-Pl1.doc"
+  },
+  m04: {
+    name: "Mẫu 04 (TT 32/2025) — Xác nhận thu nhập (lực lượng vũ trang)",
+    sub: "Dành cho nhóm lực lượng vũ trang, tổ chức cơ yếu. Đơn vị xác nhận.",
+    src: "Biểu mẫu trống (.docx) — TVPL tổng hợp",
+    url: "https://cdn.thuvienphapluat.vn//phap-luat/2022-2/NTMH/15112025/mau-04-noxh.docx"
+  },
+  m05: {
+    name: "Mẫu 05 (TT 08/2026) — Xác nhận thu nhập (không HĐLĐ, không lương hưu)",
+    sub: "Công an cấp xã nơi thường trú / tạm trú / nơi ở hiện tại xác nhận.",
+    src: "PDF Thông tư 08/2026/TT-BXD — xem trang 5 của phụ lục",
+    url: "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/02/08-bxd-kem.pdf"
+  },
+  noca: {
+    name: "Giấy chứng minh đối tượng — Công an nhân dân",
+    sub: "Theo Thông tư 56/2024/TT-BCA.",
+    src: "PDF Thông tư 56/2024/TT-BCA — xem mẫu ở trang cuối",
+    url: "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/11/56-bca.signed.pdf"
+  },
+  noqp: {
+    name: "Giấy xác nhận đối tượng — Quân đội nhân dân",
+    sub: "Theo Thông tư 94/2024/TT-BQP.",
+    src: "PDF Thông tư 94/2024/TT-BQP — xem mẫu ở trang cuối",
+    url: "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/11/94-bqp.signed.pdf"
+  }
+};
+
+/* Giấy tờ cá nhân/vụ việc — không có mẫu trống tải sẵn */
+const SELF = {
+  cocong:   { name:"Giấy tờ chứng minh người có công với cách mạng", sub:"Bản sao có chứng thực (theo Pháp lệnh Ưu đãi người có công 2020)." },
+  thannhan: { name:"Giấy chứng nhận thân nhân liệt sĩ", sub:"Bản sao có chứng thực." },
+  hongheo:  { name:"Giấy chứng nhận hộ nghèo / hộ cận nghèo", sub:"Bản sao có chứng thực, còn hiệu lực. Dùng để chứng minh cả đối tượng và điều kiện thu nhập." },
+  nhacongvu:{ name:"Quyết định / biên bản trả lại nhà ở công vụ", sub:"Dùng làm căn cứ xác nhận thuộc nhóm đối tượng." },
+  thuhoidat:{ name:"Quyết định thu hồi đất / giải tỏa / phá dỡ + phương án bồi thường", sub:"Dùng làm căn cứ xác nhận thuộc nhóm đối tượng." }
+};
+
+/* Nhà ở: chọn 1 trong 2 (M02 nếu chưa có nhà, M03 nếu có nhà <15m²) */
+const NHA_O = ["m02","m03"];
+
+/* ---------- Nhóm đối tượng ---------- */
+const GROUPS = [
+  {
+    id:1, title:"Nhóm 1 — Người có công với cách mạng, thân nhân liệt sĩ",
+    income:false,
+    note:"Không yêu cầu chứng minh thu nhập của người đứng đơn. Nếu đã kết hôn, cần xác nhận thêm hồ sơ thu nhập của vợ/chồng (đang chờ Legal làm rõ).",
+    forms:["don01"], self:["cocong","thannhan"], nhaO:true
+  },
+  {
+    id:4, title:"Nhóm 4 — Hộ nghèo, cận nghèo tại đô thị",
+    income:false,
+    note:"Giấy chứng nhận hộ nghèo/cận nghèo dùng để chứng minh cả đối tượng và điều kiện thu nhập. Vợ/chồng có phải nộp thêm giấy thu nhập riêng hay không — chờ Legal xác nhận.",
+    forms:["don01"], self:["hongheo"], nhaO:true
+  },
+  {
+    id:"5A", title:"Nhóm 5A — Người thu nhập thấp tại đô thị (CÓ hợp đồng lao động / hưởng lương hưu)",
+    income:true,
+    note:"Dùng Mẫu 01a để chứng minh đồng thời đối tượng và thu nhập.",
+    forms:["don01","m01a"], self:[], nhaO:true
+  },
+  {
+    id:"5B", title:"Nhóm 5B — Người thu nhập thấp tại đô thị (KHÔNG có HĐLĐ, không hưởng lương hưu)",
+    income:true,
+    note:"Tách riêng giấy xác nhận đối tượng (Mẫu 01) và giấy xác nhận thu nhập (Mẫu 05).",
+    forms:["don01","m01_dt","m05"], self:[], nhaO:true
+  },
+  {
+    id:6, title:"Nhóm 6 — Công nhân, người lao động tại doanh nghiệp / hợp tác xã",
+    income:true,
+    note:"Mẫu 01a do đơn vị nơi làm việc xác nhận.",
+    forms:["don01","m01a"], self:[], nhaO:true
+  },
+  {
+    id:7, title:"Nhóm 7 — Lực lượng vũ trang, tổ chức cơ yếu",
+    income:true,
+    note:"Giấy chứng minh đối tượng theo TT 56/2024/TT-BCA (Công an) hoặc TT 94/2024/TT-BQP (Quân đội). Thu nhập có thể theo xác nhận riêng của đơn vị thay vì ngưỡng chung (chờ Legal làm rõ).",
+    forms:["don01","noca","noqp","m04"], self:[], nhaO:true
+  },
+  {
+    id:8, title:"Nhóm 8 — Cán bộ, công chức, viên chức",
+    income:true,
+    note:"Mẫu 01a do cơ quan / đơn vị nơi công tác xác nhận.",
+    forms:["don01","m01a"], self:[], nhaO:true
+  },
+  {
+    id:9, title:"Nhóm 9 — Người đã trả lại nhà ở công vụ",
+    income:false,
+    note:"Không yêu cầu chứng minh thu nhập của người đứng đơn. Quyết định/biên bản trả nhà công vụ làm căn cứ. Nếu đã kết hôn, cần xác nhận hồ sơ thu nhập vợ/chồng (chờ Legal).",
+    forms:["don01","m01_dt"], self:["nhacongvu"], nhaO:true
+  },
+  {
+    id:10, title:"Nhóm 10 — Người bị thu hồi đất / giải tỏa / phá dỡ nhà, chưa được bồi thường bằng nhà ở, đất ở",
+    income:false,
+    note:"Không yêu cầu chứng minh thu nhập của người đứng đơn. Quyết định thu hồi/giải tỏa + phương án bồi thường làm căn cứ. Cơ quan ký Mẫu 01 và hồ sơ thu nhập vợ/chồng — chờ Legal xác nhận.",
+    forms:["don01","m01_dt"], self:["thuhoidat"], nhaO:true
+  }
+];
+
+/* ---------- Render ---------- */
+function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+
+function docRowForm(key){
+  const f=FORMS[key];
+  let html=`<div class="doc">
+    <div class="meta">
+      <div class="name">${esc(f.name)}</div>
+      <div class="sub">${esc(f.sub)}</div>
+      <div class="src">${esc(f.src)}</div>
+      ${f.warn?`<div class="warnline">⚠️ ${esc(f.warn)}</div>`:""}
+    </div>
+    <a class="btn btn-dl" href="${f.url}" target="_blank" rel="noopener">Tải / Mở</a>
+  </div>`;
+  return html;
+}
+function docRowSelf(key){
+  const f=SELF[key];
+  return `<div class="doc">
+    <div class="meta">
+      <div class="name">${esc(f.name)}</div>
+      <div class="sub">${esc(f.sub)}</div>
+      <div class="src">Cấp theo cá nhân / vụ việc — không có mẫu trống để tải.</div>
+    </div>
+    <span class="btn btn-self" title="Không có mẫu tải">Tự chuẩn bị</span>
+  </div>`;
+}
+
+function render(){
+  const root=document.getElementById("groups");
+  GROUPS.forEach(g=>{
+    // gom danh sách url để "mở tất cả"
+    const urls=[];
+    g.forms.forEach(k=>urls.push(FORMS[k].url));
+    if(g.nhaO) NHA_O.forEach(k=>urls.push(FORMS[k].url));
+    const urlsUniq=[...new Set(urls)];
+
+    let body=`<div class="group">
+      <div class="gtag">ĐỐI TƯỢNG</div>
+      <h2>${esc(g.title)}</h2>
+      <div class="gnote">
+        ${g.income?'<span class="income">Có xét thu nhập</span> ':'<span class="income" style="background:#eef1f5;color:#5c6b7a">Không xét thu nhập người đứng đơn</span> '}
+        ${esc(g.note)}
+      </div>
+      <button class="openall" onclick='openAll(${JSON.stringify(urlsUniq)})'>⬇ Mở tất cả biểu mẫu có sẵn (${urlsUniq.length})</button>`;
+
+    // 1) các biểu mẫu chính
+    g.forms.forEach(k=>{ body+=docRowForm(k); });
+    // 2) giấy tờ điều kiện nhà ở (chọn 1 trong 2)
+    if(g.nhaO){
+      body+=`<div class="doc"><div class="meta"><div class="name">Giấy tờ điều kiện về nhà ở — chọn 1 trong 2 mẫu dưới đây</div><div class="sub">Tùy tình trạng nhà ở hiện tại của bạn.</div></div></div>`;
+      NHA_O.forEach(k=>{ body+=docRowForm(k); });
+    }
+    // 3) giấy tờ tự chuẩn bị
+    g.self.forEach(k=>{ body+=docRowSelf(k); });
+
+    body+=`</div>`;
+    root.insertAdjacentHTML("beforeend", body);
+  });
+}
+
+function openAll(urls){
+  if(!urls||!urls.length) return;
+  showToast("Đang mở "+urls.length+" biểu mẫu trong tab mới…");
+  urls.forEach((u,i)=>{ setTimeout(()=>window.open(u,"_blank","noopener"), i*400); });
+}
+
+let toastT;
+function showToast(msg){
+  const t=document.getElementById("toast");
+  t.textContent=msg; t.classList.add("show");
+  clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove("show"),2600);
+}
+
+render();
+</script>
+</body>
+</html>

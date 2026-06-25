@@ -1,0 +1,234 @@
+==========================================================
+LOGIC FORM KIỂM TRA SƠ BỘ ĐIỀU KIỆN MUA NHÀ Ở XÃ HỘI
+Phiên bản: v2 — cập nhật pháp lý 16/06/2026 (NĐ 136/2026, TT 08/2026, Điều 78)
+Khu vực: TP.HCM (gồm Bình Dương cũ và Bà Rịa – Vũng Tàu cũ sau sáp nhập)
+==========================================================
+
+----------------------------------------------------------
+CẬP NHẬT SO VỚI v1 (tóm tắt cho Legal)
+----------------------------------------------------------
+- NGƯỠNG THU NHẬP: bỏ phương án 20/30/40 (NĐ 261/2025 đã bị thay phần này).
+  Nay là tranh chấp giữa NĐ 136/2026 (25/35/50, toàn quốc, hiệu lực 07/04/2026)
+  và QĐ 14/2026 TP.HCM (25/37,5/50). Lệch ở bậc giữa: 35 vs 37,5.
+- PHẠM VI ĐƯỢC MUA (Điều 78): chỉ nhóm 1,4,5,6,7,8,9,10. Hộ nghèo/cận nghèo
+  NÔNG THÔN (nhóm 2,3) và HỌC SINH/SINH VIÊN (nhóm 11) KHÔNG thuộc flow mua.
+- GIẤY XÁC NHẬN có giá trị 12 tháng (không phải 6 tháng).
+- Biểu mẫu hồ sơ chuyển sang TT 08/2026 + TT 32/2025 (xem file bộ hồ sơ riêng).
+
+----------------------------------------------------------
+0. NGUYÊN TẮC ĐỌC SƠ ĐỒ
+----------------------------------------------------------
+
+- 3 điều kiện bắt buộc, nối với nhau bằng VÀ (AND):
+  (1) Đối tượng  VÀ  (2) Nhà ở  VÀ  (3) Thu nhập (nếu nhóm yêu cầu)
+- Không dùng cộng điểm. Đạt 2/3 KHÔNG phải là đủ.
+- 3 kết quả cuối:
+    ĐỦ ĐIỀU KIỆN SƠ BỘ   — tất cả điều kiện cần thiết đều ĐẠT, không có câu "không chắc"
+    CẦN XÁC NHẬN THÊM     — có ít nhất một "không chắc" / trường hợp đặc biệt, nhưng KHÔNG có điểm chắc chắn trượt
+    CHƯA ĐÁP ỨNG          — có ít nhất một điều kiện chắc chắn không đạt
+- Thứ tự ưu tiên khi xét kết quả:
+    CHƯA ĐÁP ỨNG  >  CẦN XÁC NHẬN THÊM  >  ĐỦ ĐIỀU KIỆN SƠ BỘ
+- Quy tắc an toàn: bất kỳ câu trả lời "không chắc" nào cũng KHÔNG bao giờ
+  dẫn tới kết quả ĐỦ. Tối đa chỉ là CẦN XÁC NHẬN THÊM.
+
+
+----------------------------------------------------------
+1. LOGIC TỔNG THỂ
+----------------------------------------------------------
+
+BẮT ĐẦU
+   │
+   ▼
+CÂU 1: Khu vực quan tâm
+   │   (TP.HCM cũ / Bình Dương cũ / Bà Rịa – Vũng Tàu cũ / chưa xác định)
+   │   • Chỉ lưu để phân loại nhu cầu + CRM, KHÔNG quyết định kết quả.
+   │   • Lưu ý pháp lý: 3 khu vực nay thuộc cùng TP.HCM mới
+   │     → điều kiện nhà ở ở Câu 3 xét trên TOÀN TP.HCM, không chỉ tại dự án.
+   ▼
+CÂU 2: Nhóm đối tượng — "Trường hợp nào mô tả đúng nhất về bạn?"
+   │
+   ├── (A) Người có công / thân nhân liệt sĩ được hỗ trợ về nhà ở
+   │        → ĐỐI TƯỢNG: ĐẠT
+   │        → sang CÂU 3 (Nhà ở)  →  BỎ QUA thu nhập
+   │
+   ├── (B) Người đã trả lại nhà ở công vụ (không bị thu hồi do vi phạm)
+   │        → ĐỐI TƯỢNG: ĐẠT
+   │        → sang CÂU 3 (Nhà ở)  →  BỎ QUA thu nhập
+   │
+   ├── (C) Hộ nghèo / cận nghèo tại đô thị, CÓ giấy xác nhận còn hiệu lực
+   │        → ĐỐI TƯỢNG: ĐẠT
+   │        → sang CÂU 3 (Nhà ở)  →  BỎ QUA thu nhập
+   │
+   ├── (D) Người thu nhập thấp tại đô thị
+   │   (E) Công nhân / người lao động tại DN, HTX, liên hiệp HTX
+   │   (F) Cán bộ, công chức, viên chức
+   │        → ĐỐI TƯỢNG: ĐẠT
+   │        → sang CÂU 3 (Nhà ở)  →  CÂU 4A (Thu nhập nhóm thường)
+   │
+   ├── (G) Lực lượng vũ trang / tổ chức cơ yếu
+   │        → ĐỐI TƯỢNG: ĐẠT
+   │        → sang CÂU 3 (Nhà ở)  →  CÂU 4B (Xác nhận thu nhập từ đơn vị)
+   │
+   ├── (H) Bị thu hồi đất / giải tỏa / phá dỡ nhà ở, CHƯA được bồi thường
+   │        bằng nhà ở hoặc đất ở  (trường hợp đặc biệt)
+   │        → CẦN XÁC NHẬN THÊM
+   │        (có thể đi tiếp Câu 3 để thu data, nhưng kết quả tối đa = Cần xác nhận)
+   │
+   ├── (I) Có từ 2 con đẻ trở lên, không thuộc các nhóm trên
+   │        (chỉ áp dụng từ 01/07/2026 — chờ Legal xác nhận)
+   │        → CẦN XÁC NHẬN THÊM
+   │
+   ├── (J) Không thuộc trường hợp nào ở trên
+   │        → ĐỐI TƯỢNG: TRƯỢT  →  CHƯA ĐÁP ỨNG  (kết thúc)
+   │
+   └── (K) Không chắc mình thuộc nhóm nào
+            → CẦN XÁC NHẬN THÊM  (kết thúc, hoặc đi tiếp để thu data)
+
+   PHẠM VI ĐƯỢC MUA (Điều 78 Luật Nhà ở 2023): chỉ các nhóm 1,4,5,6,7,8,9,10
+   được mua/thuê mua NOXH. Cố ý KHÔNG đưa vào flow mua:
+     • Hộ nghèo/cận nghèo NÔNG THÔN (nhóm 2,3) — không thuộc nhóm được mua
+       theo mặc định (UBND cấp tỉnh có thể cho phép — câu hỏi cho Legal).
+     • Học sinh/sinh viên (nhóm 11) — chỉ được THUÊ, không mua.
+   → Form này chỉ phục vụ nhu cầu MUA, nên các nhóm trên không có nhánh ĐỦ.
+
+
+----------------------------------------------------------
+2. CÂU 3: ĐIỀU KIỆN VỀ NHÀ Ở  (xét trên toàn TP.HCM)
+----------------------------------------------------------
+
+"Trường hợp nào mô tả đúng nhất tình trạng nhà ở của bạn và vợ/chồng (nếu có)?"
+
+CÂU 3
+   │
+   ├── Không sở hữu nhà ở tại TP.HCM; chưa từng mua/thuê mua NOXH;
+   │   chưa từng hưởng chính sách hỗ trợ nhà ở
+   │        → NHÀ Ở: ĐẠT  →  đi tiếp (Câu 4A / 4B / hoặc ra kết quả nếu nhóm miễn thu nhập)
+   │
+   ├── Có nhà ở tại TP.HCM nhưng diện tích bình quân < 15 m² sàn/người,
+   │   VÀ chưa từng hưởng chính sách hỗ trợ nhà ở
+   │        → NHÀ Ở: ĐẠT  →  đi tiếp
+   │
+   ├── Có nhà ở tại TP.HCM nhưng cách xa nơi làm việc
+   │        → CẦN XÁC NHẬN THÊM  (ngoại lệ, phụ thuộc khoảng cách & xác nhận cơ quan)
+   │
+   ├── Đã từng mua / thuê mua NOXH, hoặc đã hưởng chính sách hỗ trợ nhà ở
+   │        → NHÀ Ở: TRƯỢT  →  CHƯA ĐÁP ỨNG
+   │
+   ├── Có nhà ở tại TP.HCM, diện tích bình quân ≥ 15 m² sàn/người
+   │        → NHÀ Ở: TRƯỢT  →  CHƯA ĐÁP ỨNG
+   │
+   └── Không chắc về sở hữu / diện tích / chính sách đã hưởng
+            → CẦN XÁC NHẬN THÊM
+
+Ghi chú: có quyền sử dụng ĐẤT nhưng chưa có nhà trên đất KHÔNG đồng nghĩa
+đang sở hữu nhà ở; tuy nhiên trường hợp này vẫn nên để CẦN XÁC NHẬN.
+
+
+----------------------------------------------------------
+3. CÂU 4A: THU NHẬP — NHÓM THƯỜNG (D, E, F)
+----------------------------------------------------------
+
+Chỉ hiển thị cho: thu nhập thấp đô thị / công nhân – NLĐ / cán bộ – CCVC.
+"Trong 12 tháng liền kề, thu nhập thực nhận bình quân của bạn thuộc mức nào?"
+
+  >>> NGƯỠNG THU NHẬP: CHỜ LEGAL CHỐT <<<
+  (Phương án 20/30/40 theo NĐ 261/2025 ĐÃ BỎ — phần này đã bị thay.)
+  Hai nguồn còn tranh chấp, lệch ở BẬC GIỮA:
+    - NĐ 136/2026 (toàn quốc, hiệu lực 07/04/2026):  25 / 35   / 50 triệu
+    - QĐ 14/2026 TP.HCM:                              25 / 37,5 / 50 triệu
+  (thứ tự: độc thân / độc thân nuôi con / tổng 2 vợ chồng)
+  Dùng số nào do Legal quyết (ưu tiên QĐ địa phương nếu còn hiệu lực).
+  Cấu trúc nhánh giữ nguyên như dưới.
+
+CÂU 4A
+   │
+   ├── Độc thân, thu nhập bình quân ≤ [ngưỡng 1]/tháng
+   │        → THU NHẬP: ĐẠT  →  ĐỦ ĐIỀU KIỆN SƠ BỘ
+   │
+   ├── Độc thân đang nuôi con chưa thành niên, ≤ [ngưỡng 2]/tháng
+   │        → THU NHẬP: ĐẠT  →  ĐỦ ĐIỀU KIỆN SƠ BỘ
+   │
+   ├── Đã kết hôn, TỔNG thu nhập 2 vợ chồng ≤ [ngưỡng 3]/tháng
+   │        → THU NHẬP: ĐẠT  →  ĐỦ ĐIỀU KIỆN SƠ BỘ
+   │
+   ├── Vượt mức tương ứng, nhưng hộ có ≥ 3 người phụ thuộc
+   │        → CẦN XÁC NHẬN THÊM  (có thể có mức điều chỉnh — không tự động ĐẠT)
+   │        Lưu ý: QĐ 14/2026 TP.HCM có mức cao hơn cho hộ ≥ 3 người phụ thuộc
+   │        (tham khảo 27 / 40,5 / 54 triệu — Legal xác nhận con số & cách áp dụng)
+   │
+   ├── Vượt mức tương ứng, hộ có < 3 người phụ thuộc
+   │        → THU NHẬP: TRƯỢT  →  CHƯA ĐÁP ỨNG
+   │
+   └── Không chắc mức thu nhập / cách tính
+            → CẦN XÁC NHẬN THÊM
+
+
+----------------------------------------------------------
+4. CÂU 4B: THU NHẬP — LỰC LƯỢNG VŨ TRANG (G)
+----------------------------------------------------------
+
+Không bắt người dùng tự tính ngưỡng. Hỏi xác nhận từ đơn vị.
+"Đơn vị nơi bạn công tác đã xác nhận bạn đáp ứng điều kiện thu nhập chưa?"
+
+CÂU 4B
+   │
+   ├── Đã xác nhận ĐÁP ỨNG
+   │        → THU NHẬP: ĐẠT  →  ĐỦ ĐIỀU KIỆN SƠ BỘ
+   │
+   ├── Đã xác nhận KHÔNG đáp ứng
+   │        → THU NHẬP: TRƯỢT  →  CHƯA ĐÁP ỨNG
+   │
+   └── Chưa xác nhận / không chắc
+            → CẦN XÁC NHẬN THÊM
+
+
+----------------------------------------------------------
+5. SỐ CÂU NGƯỜI DÙNG THẤY
+----------------------------------------------------------
+
+- Nhóm D, E, F (thu nhập thấp / NLĐ / CCVC):        4 câu (1·2·3·4A)
+- Nhóm G (lực lượng vũ trang):                      4 câu (1·2·3·4B)
+- Nhóm A, B, C (có công / trả lại nhà công vụ / hộ nghèo): 3 câu (1·2·3)
+- Nhóm H, I, J, K:                                  2–3 câu (kết thúc sớm hoặc đi tiếp lấy data)
+
+
+----------------------------------------------------------
+6. CÁC ĐIỂM LEGAL CẦN CHỐT TRƯỚC KHI CHẠY CHIẾN DỊCH
+----------------------------------------------------------
+
+1. Ngưỡng thu nhập áp dụng cho TP.HCM tại thời điểm chay chiến dịch: NĐ 136/2026 (25/35/50)
+   hay QĐ 14/2026 TP.HCM (25/37,5/50)? Lệch ở bậc giữa (35 vs 37,5).
+   Kèm: mức cho hộ ≥ 3 người phụ thuộc (27/40,5/54) có áp dụng không.
+2. Phạm vi xét sở hữu nhà sau sáp nhập địa giới — xác nhận "toàn TP.HCM".
+2b. Phạm vi nhóm được MUA (Điều 78): xác nhận chỉ 1,4,5,6,7,8,9,10;
+    nhóm 2,3 (hộ nghèo/cận nghèo nông thôn) có được tỉnh cho phép mua không;
+    nhóm 11 (HS-SV) chỉ thuê.
+3b. Hiệu lực giấy xác nhận: chốt 12 tháng (TT 08/2026), bỏ mốc 6 tháng cũ.
+3. Danh mục chính xác các nhóm KHÔNG phải xét điều kiện thu nhập (A, B, C).
+4. Cách xử lý hộ có ≥ 3 người phụ thuộc (hiện để CẦN XÁC NHẬN).
+5. Cách xử lý nhóm có ≥ 2 con đẻ từ 01/07/2026 (hiện để CẦN XÁC NHẬN).
+6. Yêu cầu & cách xác nhận với lực lượng vũ trang / cơ yếu.
+7. Trường hợp nhà ở cách xa nơi làm việc (điều kiện, khoảng cách, xác nhận).
+8. Trường hợp bị thu hồi đất chưa được bồi thường bằng nhà/đất.
+9. Cách diễn đạt "đã hưởng chính sách hỗ trợ nhà ở" để người dùng không hiểu sai.
+10. Bộ hồ sơ cần chuẩn bị tương ứng từng nhóm (để gắn vào màn tải app).
+
+
+----------------------------------------------------------
+7. NGUỒN THAM KHẢO
+----------------------------------------------------------
+
+- Tổng hợp điều kiện mua NOXH 2026:
+  https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/chinh-sach-moi/110536/dieu-kien-mua-nha-o-xa-hoi-moi-nhat-2026
+- Luật Nhà ở 2023, Điều 76 (12 nhóm đối tượng) & Điều 78 (nhóm được mua/thuê mua)
+- Nghị định 100/2024/NĐ-CP (điều kiện hưởng chính sách NOXH)
+- Nghị định 261/2025/NĐ-CP (ngưỡng cũ 20/30/40 — ĐÃ BỊ THAY phần thu nhập)
+- Nghị định 136/2026/NĐ-CP (ngưỡng thu nhập 25/35/50, toàn quốc, 07/04/2026)
+- Thông tư 08/2026/TT-BXD (15/02/2026 — biểu mẫu Mẫu 01/02/05, bỏ yêu cầu
+  bảng lương 12 tháng; giấy xác nhận có giá trị 12 tháng)
+- Thông tư 32/2025/TT-BXD (biểu mẫu Mẫu 01a, 04)
+- QĐ 14/2026/QĐ-UBND TP.HCM 28/03/2026 (25/37,5/50; 27/40,5/54 cho hộ ≥ 3
+  người phụ thuộc — cần xác minh hiệu lực so với NĐ 136/2026)
+
+Lưu ý: đây là công cụ kiểm tra SƠ BỘ, không thay thế xác nhận của cơ quan
+có thẩm quyền. Hiển thị ngày cập nhật chính sách + disclaimer trên form.

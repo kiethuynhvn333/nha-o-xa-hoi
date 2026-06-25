@@ -1,0 +1,263 @@
+==============================================================
+CONTEXT — DỰ ÁN TALLY FORM KIỂM TRA ĐIỀU KIỆN MUA NHÀ Ở XÃ HỘI (NOXH)
+Cập nhật: 18/06/2026
+==============================================================
+
+------------------------------------------------------------
+1. MỤC TIÊU & BỐI CẢNH
+------------------------------------------------------------
+- Người dùng: Kiet (Growth/Digital Marketing tại Chợ Tốt).
+- Đây là một GTM test trên Digital.
+- Đối tượng mục tiêu: người muốn MUA nhà ở xã hội (NOXH) tại
+  HCM, Bình Dương, Vũng Tàu.
+- Pain point của user cuối: không biết mình có đủ điều kiện
+  hay không, thông tin pháp lý phân mảnh, không rõ cần giấy
+  tờ gì.
+- Giải pháp: 1 Tally form để người dùng TỰ kiểm tra sơ bộ
+  điều kiện -> sau đó tải app Chợ Tốt để nhận bộ giấy tờ
+  tương ứng với nhóm của họ (JTBD).
+
+------------------------------------------------------------
+2. YÊU CẦU CHÍNH CỦA FORM
+------------------------------------------------------------
+- Lọc dựa trên 3 điều kiện pháp lý chính:
+  (1) Điều kiện về ĐỐI TƯỢNG (nhóm)
+  (2) Điều kiện về NHÀ Ở
+  (3) Điều kiện về THU NHẬP
+- Flow đơn giản: Khu vực -> Nhóm đối tượng -> Nhà ở -> Thu nhập.
+- Form cũ (https://tally.so/forms/Bz987R/edit) QUÁ PHỨC TẠP
+  (277 blocks, ~160 logic, ~15 câu hỏi) -> cần đơn giản hóa
+  để Kiet + team Legal verify nhanh.
+- Quá nhiều lựa chọn "không chắc" trong form cũ. GIỮ đáp án
+  "không chắc" nhưng route về kết quả "CẦN XÁC NHẬN THÊM".
+  -> QUY TẮC CỨNG: "không chắc" KHÔNG BAO GIỜ ra kết quả "ĐỦ"
+  (rủi ro false-positive là không chấp nhận được).
+- Ngắn hơn (ít case hơn) NHƯNG giữ chính xác theo luật.
+
+------------------------------------------------------------
+3. QUY TẮC ƯU TIÊN (THỐNG NHẤT)
+------------------------------------------------------------
+- 3 kết quả: ĐỦ / CẦN XÁC NHẬN / CHƯA ĐÁP ỨNG.
+- Thứ tự ưu tiên: CHƯA ĐÁP ỨNG > CẦN XÁC NHẬN > ĐỦ.
+- Không dùng scoring. Dùng AND của 3 điều kiện.
+- Fallback an toàn: nếu mơ hồ -> CẦN XÁC NHẬN.
+
+------------------------------------------------------------
+4. CÁC QUYẾT ĐỊNH ĐÃ CHỐT
+------------------------------------------------------------
+- Vẽ logic TRƯỚC (Miro) để hiểu/duyệt, rồi mới làm Tally.
+- Đã thử 2 mô hình logic:
+  * v1 = cây rẽ nhánh (branching tree) — fail/unsure đi
+    thẳng tới kết quả. -> User thấy DỄ HIỂU hơn.
+  * v2 = mô hình biến trạng thái (OBJECT/HOUSING/INCOME =
+    PASS/REVIEW/FAIL) — chính xác hơn nhưng khó trình bày.
+- CHỐT: dùng LOGIC v1 (dễ hiểu) + sửa cho ĐÚNG luật.
+- Trình bày cho Legal: xuất file TXT dạng cây ASCII rẽ nhánh.
+- Nhóm được miễn điều kiện thu nhập: BỎ QUA câu thu nhập
+  (đúng luật + ngắn hơn).
+
+------------------------------------------------------------
+5. 5 ĐIỂM SỬA ĐỂ ĐÚNG LUẬT (v1 cũ sai/thiếu)
+------------------------------------------------------------
+(1) Khu vực: HCM + Bình Dương cũ + Vũng Tàu cũ = MỘT đơn vị
+    "TP.HCM mới" -> check sở hữu nhà trên toàn TP.HCM.
+(2) Lực lượng vũ trang: tách riêng đường thu nhập (Câu 4B,
+    xác nhận theo đơn vị).
+(3) Thu hồi đất -> CẦN XÁC NHẬN (không tự cho ĐỦ).
+(4) Nhóm >=2 con đẻ (từ 01/07/2026) -> CẦN XÁC NHẬN.
+(5) "Cách xa nơi làm việc" -> CẦN XÁC NHẬN.
+
+------------------------------------------------------------
+6. VẤN ĐỀ CÒN TREO (CHỜ LEGAL CHỐT)
+------------------------------------------------------------
+NGƯỠNG THU NHẬP — 2 nguồn mâu thuẫn, CHƯA CHỌN:
+  * 25 / 37.5 / 50 triệu (QĐ HCM trong form cũ + file của user)
+  * 20 / 30 / 40 triệu (Nghị định 261/2025/NĐ-CP)
+  (theo: độc thân / độc thân có con / vợ chồng gộp)
+=> Đây là rủi ro chính xác lớn nhất. PHẢI chốt trước khi
+   build Tally.
+
+------------------------------------------------------------
+7. CƠ SỞ PHÁP LÝ THAM CHIẾU
+------------------------------------------------------------
+- Luật Nhà ở 2023
+- Nghị định 100/2024/NĐ-CP
+- Nghị định 261/2025/NĐ-CP
+- QĐ 14/2026/QĐ-UBND TP.HCM
+- Nghị quyết 201/2025/QH15
+- thuvienphapluat.vn (bài: điều kiện mua NOXH mới nhất 2026)
+
+------------------------------------------------------------
+8. FILE TRONG FOLDER NOXH
+------------------------------------------------------------
+- logic_form_noxh_v1_re_nhanh.txt
+  => DELIVERABLE HIỆN TẠI. Cây ASCII rẽ nhánh (logic v1 đã
+     sửa đúng luật) để Legal review. Gồm: nguyên tắc đọc,
+     cây đầy đủ (Câu 1 Khu vực -> Câu 2 Nhóm A-K -> Câu 3
+     Nhà ở -> Câu 4A/4B Thu nhập), 3 kết quả + ưu tiên,
+     checklist 10 điểm cho Legal, nguồn.
+- tally_form_logic_nha_o_xa_hoi_2026.txt (user upload)
+  => Spec logic chi tiết của user (mô hình biến trạng thái);
+     nguồn để sửa cho đúng luật.
+- context.txt (file này)
+
+------------------------------------------------------------
+9. TRẠNG THÁI & BƯỚC TIẾP THEO
+------------------------------------------------------------
+- ĐANG CHỜ: user duyệt cây logic v1 + Legal chốt ngưỡng
+  thu nhập (20/30/40 hay 25/37.5/50).
+- CHƯA build/sửa Tally cho tới khi logic được duyệt VÀ chốt
+  số thu nhập.
+- KHI DUYỆT: dựng Tally form theo cây v1 với số thu nhập
+  đã chốt (workspace wvE1LQ; có thể tạo form mới hoặc thay
+  form Bz987R).
+
+------------------------------------------------------------
+10. CẬP NHẬT PHIÊN LÀM VIỆC 16/06/2026
+------------------------------------------------------------
+ĐÃ LÀM TRONG CHAT NÀY:
+
+(A) RÀ SOÁT BỘ HỒ SƠ TỪNG NHÓM + ĐỐI CHIẾU PHÁP LÝ MỚI
+    - Đọc doc_noxh.html: dùng biểu mẫu CŨ (TT 05/2024, TT
+      32/2025), ghi 6 tháng hiệu lực, gộp nhầm nhóm 2-4 và
+      9-11, map sai Mẫu 04 cho nhóm 5/6/8 -> cần cập nhật.
+    - Tạo file mới: bo_ho_so_noxh_theo_nhom_LEGAL_REVIEW.txt
+      (danh sách giấy tờ chính xác từng nhóm cho Legal).
+
+(B) 5 CẬP NHẬT PHÁP LÝ QUAN TRỌNG (đã verify web):
+    1. NGƯỠNG THU NHẬP: 20/30/40 (NĐ 261/2025) ĐÃ BỊ THAY.
+       Nay tranh chấp NĐ 136/2026 (25/35/50, toàn quốc,
+       07/04/2026) vs QĐ 14/2026 TP.HCM (25/37,5/50).
+       LỆCH Ở BẬC GIỮA: 35 vs 37,5. Hộ >=3 người phụ thuộc:
+       HCM có mức 27/40,5/54 (cần Legal xác nhận).
+       => Đây vẫn là rủi ro chính xác lớn nhất, CHỜ LEGAL.
+    2. PHẠM VI ĐƯỢC MUA (Điều 78 Luật Nhà ở 2023): chỉ nhóm
+       1,4,5,6,7,8,9,10. Nhóm 2,3 (hộ nghèo/cận nghèo NÔNG
+       THÔN) không thuộc flow mua mặc định (tỉnh có thể cho
+       phép -> hỏi Legal). Nhóm 11 (HS-SV) chỉ THUÊ.
+    3. HIỆU LỰC GIẤY XÁC NHẬN: 12 tháng (không phải 6).
+    4. BIỂU MẪU: chuyển sang TT 08/2026 (Mẫu 01/02/05, bỏ
+       yêu cầu bảng lương 12 tháng) + TT 32/2025 (Mẫu 01a,
+       04). Mẫu 04 (thu nhập) CHỈ cho nhóm 7. Mẫu 01a =
+       đối tượng + thu nhập (KHÔNG phải nhà ở). Mẫu 02
+       (chưa có nhà) xác nhận bởi Văn phòng đăng ký đất đai;
+       Mẫu 03 (nhà <15m2) bởi UBND xã.
+    5. NĐ 54/2026 được nhắc tới nhưng cần Legal xác minh nội
+       dung cụ thể (chưa rõ thay đổi gì).
+
+(C) ĐÃ UPDATE form_noxh.txt: v1 -> v2.
+    - CÂU 4A: bỏ 20/30/40, đưa 2 nguồn mới + nhánh hộ >=3
+      người phụ thuộc (27/40,5/54).
+    - CÂU 2: thêm khối phạm vi Điều 78 (loại nhóm 2,3,11
+      khỏi nhánh ĐỦ).
+    - Hiệu lực 12 tháng; mục Legal cần chốt viết lại (#1,
+      thêm #2b, #3b); nguồn bổ sung Điều 76/78, NĐ 136/2026,
+      TT 08/2026, TT 32/2025.
+
+FILE MỚI/SỬA TRONG FOLDER:
+    - bo_ho_so_noxh_theo_nhom_LEGAL_REVIEW.txt (MỚI)
+    - form_noxh.txt (SỬA: v1 -> v2)
+
+ĐIỂM TREO CHÍNH CHO LEGAL:
+    - Chọn 35 hay 37,5 ở bậc giữa thu nhập (phải chốt trước
+      khi build Tally).
+    - Nhóm 2,3 có được tỉnh cho phép mua không.
+    - Xác minh NĐ 54/2026 + hiệu lực QĐ 14/2026 so với
+      NĐ 136/2026.
+
+------------------------------------------------------------
+11. CẬP NHẬT PHIÊN LÀM VIỆC 18/06/2026
+------------------------------------------------------------
+ĐÃ LÀM TRONG CHAT NÀY:
+
+(A) TẠO DELIVERABLE MỚI: ho-so-nha-o-xa-hoi.html
+    - File HTML tương tác, MVP. Mỗi nhóm 1 block trải từ
+      trên xuống: Nhóm 1, 4, 5A, 5B, 6, 7, 8, 9, 10.
+    - Mỗi biểu mẫu có nút "Tải/Mở" trỏ link chính thức; mỗi
+      nhóm có nút "Mở tất cả biểu mẫu có sẵn".
+    - Phân biệt 2 loại: "có mẫu tải sẵn" vs "tự chuẩn bị"
+      (giấy cấp theo cá nhân/vụ việc, không có mẫu trống).
+    - Có banner disclaimer "tham khảo sơ bộ, chờ Legal".
+
+(B) QUYẾT ĐỊNH ĐÃ CHỐT VỚI USER (qua câu hỏi clarify):
+    1. Cơ chế tải: nút MỞ TỪNG LINK chính thức (không gộp
+       ZIP). Vì sandbox của Claude KHÔNG tải được file
+       binary từ web (curl chặn, web_fetch chỉ trả text)
+       -> không build được ZIP offline từ link ngoài.
+    2. Nguồn biểu mẫu: ưu tiên TT 08/2026, thiếu thì dùng
+       TT 32/2025 / 05/2024 + ghi chú.
+    3. Mẫu 01 (NĐ 261/2025) vẫn cho tải NHƯNG kèm cảnh báo
+       đỏ: ngưỡng thu nhập in trên mẫu (20/30/40) đã lỗi
+       thời, người dùng tự chỉnh theo NĐ 136/2026 & QĐ
+       14/2026.
+    4. Phạm vi: nhóm 1,4,5,6,7,8,9,10 (5 tách 5A có HĐLĐ /
+       5B không HĐLĐ). Loại nhóm 2,3,11.
+
+(C) LINK BIỂU MẪU ĐÃ GẮN (lấy từ 2 file docx Legal + nguồn
+    thuvienphapluat; CHƯA verify live được do giới hạn tải):
+    - Đơn 01 (NĐ261): cdn.thuvienphapluat .../don-mua-nha-
+      o-xa-hoi-2025.docx
+    - Mẫu 01 đối tượng / Mẫu 02 nhà ở / Mẫu 05 thu nhập
+      (TT 08/2026): cùng PDF datafiles.chinhphu.vn/.../
+      08-bxd-kem.pdf (trang 1-2 / 3-4 / 5)
+    - Mẫu 01a (TT32/2025): .../mau-01a-noxh.docx
+    - Mẫu 04 (TT32/2025): .../mau-04-noxh.docx
+    - Mẫu 03 (TT05/2024): .../mau-so-03-Pl1.doc
+    - NOCA (TT56/2024-BCA) / NOQP (TT94/2024-BQP): PDF
+      chinhphu, mẫu ở trang cuối.
+
+FILE MỚI TRONG FOLDER:
+    - ho-so-nha-o-xa-hoi.html (MỚI — deliverable phiên này)
+
+ĐIỂM TREO / BƯỚC TIẾP:
+    - Chưa verify được link còn sống & đúng nội dung
+      (giới hạn tải binary). Cần kiểm tra thủ công.
+    - Mâu thuẫn hiệu lực giấy xác nhận: 12 tháng (TT08/2026,
+      file nội bộ) vs 6 tháng (TT05/2024, thuvienphapluat).
+    - Nếu cần ZIP offline thật: user tải 7 mẫu 1 lần bỏ vào
+      folder rồi Claude build zip cục bộ.
+
+------------------------------------------------------------
+12. CẬP NHẬT PHIÊN LÀM VIỆC 19/06/2026
+------------------------------------------------------------
+ĐÃ LÀM TRONG CHAT NÀY:
+
+(A) ĐÃ BUILD TALLY FORM MỚI (lần đầu lên Tally thật).
+    - Form LIVE: WOQ84P — https://tally.so/r/WOQ84P
+      (đang PUBLISHED). Form cũ Bz987R: KHÔNG đụng tới.
+    - Tiêu đề khoá cứng: "Kiểm tra sơ bộ điều kiện mua nhà ở
+      xã hội_ver2".
+    - 9 trang: Câu1 Khu vực -> Câu2 Nhóm -> Câu3 Nhà ở ->
+      Câu4 Thu nhập -> Câu4B Đơn vị (chỉ LLVT) -> Lead
+      capture -> 3 trang kết quả (CẦN XÁC NHẬN / ĐỦ / CHƯA
+      ĐÁP ỨNG).
+    - Logic v1 (cây rẽ nhánh) như đã chốt; "không chắc"/fail
+      không bao giờ ra "ĐỦ" (route về CẦN XÁC NHẬN / CHƯA
+      ĐÁP ỨNG). Tổng 28 logic rule.
+
+(B) NGƯỠNG THU NHẬP: tạm build theo 25 / 37,5 / 50 triệu
+    (QĐ 14/2026 TP.HCM) + nhánh hộ >=3 người phụ thuộc.
+    => VẪN CHỜ LEGAL chốt (35 vs 37,5 ở bậc giữa). Đã ship
+    trước sign-off để kịp campaign tuần này.
+
+(C) NỘI DUNG ĐỘNG TRÊN 3 TRANG KẾT QUẢ: thêm 18 SHOW rule
+    để mỗi trang kết quả hiện đúng lý do + nhóm đối tượng
+    theo câu trả lời thực tế của user.
+
+(D) ĐỔI LEAD CAPTURE: số điện thoại -> EMAIL (theo yêu cầu
+    Kiet). Đã xoá field phone, thêm field Email, sửa câu dẫn
+    + chuyển rule định tuyến "ĐỦ" sang gate theo email
+    IS NOT EMPTY. Field Họ tên = optional.
+
+ĐIỂM TREO / RỦI RO CHÍNH:
+    - CTA trên cả 3 trang kết quả vẫn là placeholder
+      https://www.chotot.com (chưa phải link app-store /
+      deep link). Đây là chỗ rò rỉ funnel lớn nhất nếu mục
+      tiêu là app install -> SỬA trước khi chạy campaign.
+    - Ngưỡng thu nhập + wording điều kiện vẫn pre-Legal.
+      Nếu Legal sửa số, lead đã submit nhận kết quả sai.
+    - Trade-off phone->email: email là kênh re-contact yếu
+      hơn Zalo/SMS/call cho audience VN; cân nhắc nếu mục
+      tiêu là đẩy install.
+
+==============================================================

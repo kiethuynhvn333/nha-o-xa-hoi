@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tổng hợp bộ hồ sơ mua nhà ở xã hội năm 2026 theo từng nhóm đối tượng, kèm link tải biểu mẫu.">
+    <title>Tổng hợp hồ sơ mua nhà ở xã hội 2026</title>
+    <style>
+        :root {
+            --bg: #f6f7f9;
+            --surface: #ffffff;
+            --text: #1c2430;
+            --muted: #5f6b7a;
+            --line: #dfe4ea;
+            --accent: #0b57d0;
+            --accent-soft: #eaf2ff;
+            --warning: #7a4d00;
+            --warning-bg: #fff4d6;
+            --success: #146c43;
+            --success-bg: #e9f7ef;
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+        }
+        .container {
+            width: min(1180px, calc(100% - 32px));
+            margin: 0 auto;
+        }
+        header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--line);
+            padding: 32px 0 24px;
+        }
+        h1 {
+            margin: 0 0 10px;
+            font-size: clamp(28px, 4vw, 42px);
+            line-height: 1.2;
+        }
+        .subtitle {
+            margin: 0;
+            color: var(--muted);
+            max-width: 900px;
+        }
+        main { padding: 28px 0 48px; }
+        .notice, .toc, .sources {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 22px;
+        }
+        .notice {
+            border-left: 5px solid #d89b00;
+            background: var(--warning-bg);
+        }
+        .notice h2, .toc h2, .sources h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .toc ul {
+            columns: 2;
+            gap: 32px;
+            margin: 0;
+            padding-left: 20px;
+        }
+        .toc li { margin-bottom: 8px; break-inside: avoid; }
+        a { color: var(--accent); }
+        .group-card {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 22px;
+            margin-bottom: 22px;
+            box-shadow: 0 4px 16px rgba(20, 30, 50, 0.04);
+        }
+        .group-card h2 {
+            margin-top: 0;
+            font-size: 23px;
+            line-height: 1.35;
+        }
+        .income-note {
+            background: var(--accent-soft);
+            border-left: 4px solid var(--accent);
+            padding: 12px 14px;
+            border-radius: 8px;
+        }
+        .table-wrap { overflow-x: auto; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 850px;
+        }
+        th, td {
+            padding: 12px 14px;
+            border: 1px solid var(--line);
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: #f0f3f7;
+            font-size: 14px;
+        }
+        td { font-size: 14px; }
+        .download {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 700;
+            background: var(--accent);
+            color: #fff;
+            padding: 7px 11px;
+            border-radius: 7px;
+            white-space: nowrap;
+        }
+        .download:hover { opacity: 0.9; }
+        .no-download {
+            display: inline-block;
+            color: var(--success);
+            background: var(--success-bg);
+            padding: 6px 9px;
+            border-radius: 7px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .back-top { margin-bottom: 0; text-align: right; }
+        .sources ul { margin-bottom: 0; }
+        footer {
+            padding: 22px 0 36px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+        code {
+            background: #eef1f5;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+        @media (max-width: 760px) {
+            .toc ul { columns: 1; }
+            .container { width: min(100% - 20px, 1180px); }
+            .group-card { padding: 16px; }
+        }
+        @media print {
+            body { background: #fff; }
+            .group-card, .notice, .toc, .sources { box-shadow: none; }
+            .download { color: #000; background: none; padding: 0; }
+            .back-top { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <header id="top">
+        <div class="container">
+            <h1>Tổng hợp hồ sơ mua nhà ở xã hội 2026</h1>
+            <p class="subtitle">
+                Danh sách hồ sơ theo từng nhóm đối tượng, kèm đường dẫn tải biểu mẫu tương ứng.
+                Phiên bản này được thiết kế để con người dễ đọc và các công cụ AI dễ phân tích cấu trúc.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="notice">
+            <h2>Lưu ý quan trọng trước khi sử dụng</h2>
+            <p>
+                Nội dung này là bản tổng hợp phục vụ tham khảo và triển khai nội bộ, không thay thế tư vấn pháp lý.
+                Các biểu mẫu và yêu cầu có thể tiếp tục được sửa đổi. Trước khi công bố rộng rãi hoặc dùng trong quy trình chính thức,
+                cần kiểm tra lại hiệu lực văn bản và yêu cầu thực tế của chủ đầu tư hoặc cơ quan tiếp nhận hồ sơ.
+            </p>
+            <p>
+                Có hai loại cùng mang tên <strong>“Mẫu 01”</strong>: một mẫu là đơn đăng ký mua nhà ở xã hội;
+                một mẫu khác là giấy chứng minh thuộc nhóm đối tượng. Khi hiển thị trên form hoặc landing page,
+                cần ghi đầy đủ tên văn bản để tránh người dùng tải nhầm.
+            </p>
+            <p>
+                <strong>Thông tin trên chỉ nhằm mục đích tham khảo và không phải là tư vấn pháp lý. Người dùng nên đối chiếu với quy định pháp luật hiện hành và hướng dẫn của cơ quan có thẩm quyền trước khi thực hiện hồ sơ mua nhà ở xã hội.</strong>
+            </p>
+        </section>
+
+        <nav class="toc" aria-label="Mục lục">
+            <h2>Mục lục nhóm đối tượng</h2>
+            <ul>
+                <li><a href="#nhom-1">Nhóm 1 — Người có công với cách mạng, thân nhân liệt sĩ</a></li>
+<li><a href="#nhom-4">Nhóm 4 — Hộ nghèo, cận nghèo tại đô thị</a></li>
+<li><a href="#nhom-5a">Nhóm 5A — Người thu nhập thấp tại đô thị: Có hợp đồng lao động, hưởng lương hoặc hưởng lương hưu</a></li>
+<li><a href="#nhom-5b">Nhóm 5B — Người thu nhập thấp tại đô thị: Không có hợp đồng lao động và không hưởng lương hưu</a></li>
+<li><a href="#nhom-6">Nhóm 6 — Công nhân, người lao động tại doanh nghiệp hoặc hợp tác xã</a></li>
+<li><a href="#nhom-7">Nhóm 7 — Lực lượng vũ trang và tổ chức cơ yếu</a></li>
+<li><a href="#nhom-8">Nhóm 8 — Cán bộ, công chức, viên chức</a></li>
+<li><a href="#nhom-9">Nhóm 9 — Người đã trả lại nhà ở công vụ</a></li>
+<li><a href="#nhom-10">Nhóm 10 — Người bị thu hồi đất, giải tỏa hoặc phá dỡ nhà ở nhưng chưa được bồi thường bằng nhà ở, đất ở</a></li>
+            </ul>
+        </nav>
+
+        
+    <section class="group-card" id="nhom-1">
+        <h2>Nhóm 1 — Người có công với cách mạng, thân nhân liệt sĩ</h2>
+        <p class="income-note"><strong>Lưu ý:</strong> Không yêu cầu giấy chứng minh thu nhập của người đứng đơn.</p>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại hồ sơ</th>
+                        <th>Tên giấy tờ / biểu mẫu</th>
+                        <th>Link tải</th>
+                        <th>Ghi chú áp dụng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+            <tr>
+                <td>Đơn đăng ký mua nhà ở xã hội</td>
+                <td>Mẫu 01 — Nghị định 136/2026/NĐ-CP</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-04/mau-01-noxh-nd136.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Có mẫu tải</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy chứng minh đối tượng</td>
+                <td>Bản sao có chứng thực giấy tờ chứng minh người có công hoặc giấy chứng nhận thân nhân liệt sĩ</td>
+                <td><span class="no-download">Không có link tải chung</span></td>
+                <td>Không có mẫu tải chung; dùng giấy tờ thực tế do cơ quan có thẩm quyền cấp</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 02 — Trường hợp chưa có nhà ở (Phụ lục Thông tư 08/2026/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/ms02.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 03 — Trường hợp có nhà nhưng diện tích bình quân dưới 15 m² sàn/người (Phụ lục I Thông tư 05/2024/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/3-Pl1-05-2024-TT-BXD.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+                </tbody>
+            </table>
+        </div>
+        <p class="back-top"><a href="#top">↑ Về đầu trang</a></p>
+    </section>
+    
+    <section class="group-card" id="nhom-4">
+        <h2>Nhóm 4 — Hộ nghèo, cận nghèo tại đô thị</h2>
+        <p class="income-note"><strong>Lưu ý:</strong> Giấy chứng nhận hộ nghèo hoặc hộ cận nghèo còn hiệu lực dự kiến dùng để chứng minh cả đối tượng và điều kiện thu nhập.</p>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại hồ sơ</th>
+                        <th>Tên giấy tờ / biểu mẫu</th>
+                        <th>Link tải</th>
+                        <th>Ghi chú áp dụng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+            <tr>
+                <td>Đơn đăng ký mua nhà ở xã hội</td>
+                <td>Mẫu 01 — Nghị định 136/2026/NĐ-CP</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-04/mau-01-noxh-nd136.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Có mẫu tải</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy chứng minh đối tượng và thu nhập</td>
+                <td>Bản sao có chứng thực giấy chứng nhận hộ nghèo hoặc hộ cận nghèo còn hiệu lực</td>
+                <td><span class="no-download">Không có link tải chung</span></td>
+                <td>Không có mẫu tải chung; dùng giấy chứng nhận thực tế</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 02 — Trường hợp chưa có nhà ở (Phụ lục Thông tư 08/2026/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/ms02.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 03 — Trường hợp có nhà nhưng diện tích bình quân dưới 15 m² sàn/người (Phụ lục I Thông tư 05/2024/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/3-Pl1-05-2024-TT-BXD.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+                </tbody>
+            </table>
+        </div>
+        <p class="back-top"><a href="#top">↑ Về đầu trang</a></p>
+    </section>
+    
+    <section class="group-card" id="nhom-5a">
+        <h2>Nhóm 5A — Người thu nhập thấp tại đô thị: Có hợp đồng lao động, hưởng lương hoặc hưởng lương hưu</h2>
+        <p class="income-note"><strong>Lưu ý:</strong> Mẫu 01a được dùng để chứng minh đối tượng và thu nhập.</p>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại hồ sơ</th>
+                        <th>Tên giấy tờ / biểu mẫu</th>
+                        <th>Link tải</th>
+                        <th>Ghi chú áp dụng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+            <tr>
+                <td>Đơn đăng ký mua nhà ở xã hội</td>
+                <td>Mẫu 01 — Nghị định 136/2026/NĐ-CP</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-04/mau-01-noxh-nd136.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Có mẫu tải</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy chứng minh đối tượng và thu nhập</td>
+                <td>Mẫu 01a — Thông tư 32/2025/TT-BXD</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2026/NDQ/mau-so-01a-tt-32-bxd.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Do đơn vị làm việc, cơ quan trả lương, cơ quan BHXH hoặc cơ quan có thẩm quyền tương ứng xác nhận</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 02 — Trường hợp chưa có nhà ở (Phụ lục Thông tư 08/2026/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/ms02.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 03 — Trường hợp có nhà nhưng diện tích bình quân dưới 15 m² sàn/người (Phụ lục I Thông tư 05/2024/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/3-Pl1-05-2024-TT-BXD.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+                </tbody>
+            </table>
+        </div>
+        <p class="back-top"><a href="#top">↑ Về đầu trang</a></p>
+    </section>
+    
+    <section class="group-card" id="nhom-5b">
+        <h2>Nhóm 5B — Người thu nhập thấp tại đô thị: Không có hợp đồng lao động và không hưởng lương hưu</h2>
+        <p class="income-note"><strong>Lưu ý:</strong> Mẫu 05 theo Thông tư 08/2026/TT-BXD được dùng để chứng minh đồng thời đối tượng và thu nhập; không cần nộp thêm Mẫu 01 theo Thông tư 08/2026 cho trường hợp này.</p>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại hồ sơ</th>
+                        <th>Tên giấy tờ / biểu mẫu</th>
+                        <th>Link tải</th>
+                        <th>Ghi chú áp dụng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+            <tr>
+                <td>Đơn đăng ký mua nhà ở xã hội</td>
+                <td>Mẫu 01 — Nghị định 136/2026/NĐ-CP</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-04/mau-01-noxh-nd136.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Có mẫu tải</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy chứng minh đối tượng và thu nhập</td>
+                <td>Mẫu 05 — Thông tư 08/2026/TT-BXD</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/ms05.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chứng minh đồng thời đối tượng và thu nhập</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 02 — Trường hợp chưa có nhà ở (Phụ lục Thông tư 08/2026/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/ms02.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 03 — Trường hợp có nhà nhưng diện tích bình quân dưới 15 m² sàn/người (Phụ lục I Thông tư 05/2024/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/3-Pl1-05-2024-TT-BXD.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+                </tbody>
+            </table>
+        </div>
+        <p class="back-top"><a href="#top">↑ Về đầu trang</a></p>
+    </section>
+    
+    <section class="group-card" id="nhom-6">
+        <h2>Nhóm 6 — Công nhân, người lao động tại doanh nghiệp hoặc hợp tác xã</h2>
+        <p class="income-note"><strong>Lưu ý:</strong> Mẫu 01a do đơn vị nơi làm việc xác nhận, dùng để chứng minh đối tượng và thu nhập.</p>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại hồ sơ</th>
+                        <th>Tên giấy tờ / biểu mẫu</th>
+                        <th>Link tải</th>
+                        <th>Ghi chú áp dụng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+            <tr>
+                <td>Đơn đăng ký mua nhà ở xã hội</td>
+                <td>Mẫu 01 — Nghị định 136/2026/NĐ-CP</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-04/mau-01-noxh-nd136.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Có mẫu tải</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy chứng minh đối tượng và thu nhập</td>
+                <td>Mẫu 01a — Thông tư 32/2025/TT-BXD</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2026/NDQ/mau-so-01a-tt-32-bxd.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Do doanh nghiệp hoặc hợp tác xã nơi làm việc xác nhận</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 02 — Trường hợp chưa có nhà ở (Phụ lục Thông tư 08/2026/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/ms02.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 03 — Trường hợp có nhà nhưng diện tích bình quân dưới 15 m² sàn/người (Phụ lục I Thông tư 05/2024/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/3-Pl1-05-2024-TT-BXD.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+                </tbody>
+            </table>
+        </div>
+        <p class="back-top"><a href="#top">↑ Về đầu trang</a></p>
+    </section>
+    
+    <section class="group-card" id="nhom-7">
+        <h2>Nhóm 7 — Lực lượng vũ trang và tổ chức cơ yếu</h2>
+        <p class="income-note"><strong>Lưu ý:</strong> Giấy chứng minh đối tượng phụ thuộc đơn vị quản lý; Mẫu 04 được dùng để xác nhận điều kiện thu nhập.</p>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại hồ sơ</th>
+                        <th>Tên giấy tờ / biểu mẫu</th>
+                        <th>Link tải</th>
+                        <th>Ghi chú áp dụng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+            <tr>
+                <td>Đơn đăng ký mua nhà ở xã hội</td>
+                <td>Mẫu 01 — Nghị định 136/2026/NĐ-CP</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-04/mau-01-noxh-nd136.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Có mẫu tải</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy chứng minh đối tượng</td>
+                <td>Mẫu thuộc phạm vi Bộ Quốc phòng — Thông tư 94/2024/TT-BQP</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2026/NDQ/phu-luc-thong-tu-94.docx" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Áp dụng cho Quân đội, quốc phòng và một số trường hợp cơ yếu thuộc phạm vi quản lý</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy chứng minh đối tượng</td>
+                <td>Mẫu NOCA — Thông tư 56/2024/TT-BCA</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2026/NDQ/Mau-NOCA.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Áp dụng cho Công an nhân dân</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy chứng minh thu nhập</td>
+                <td>Mẫu 04 — Thông tư 32/2025/TT-BXD</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/ms04.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Dùng để xác nhận điều kiện thu nhập</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 02 — Trường hợp chưa có nhà ở (Phụ lục Thông tư 08/2026/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/ms02.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 03 — Trường hợp có nhà nhưng diện tích bình quân dưới 15 m² sàn/người (Phụ lục I Thông tư 05/2024/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/3-Pl1-05-2024-TT-BXD.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+                </tbody>
+            </table>
+        </div>
+        <p class="back-top"><a href="#top">↑ Về đầu trang</a></p>
+    </section>
+    
+    <section class="group-card" id="nhom-8">
+        <h2>Nhóm 8 — Cán bộ, công chức, viên chức</h2>
+        <p class="income-note"><strong>Lưu ý:</strong> Mẫu 01a do cơ quan hoặc đơn vị nơi công tác xác nhận, dùng để chứng minh đối tượng và thu nhập.</p>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại hồ sơ</th>
+                        <th>Tên giấy tờ / biểu mẫu</th>
+                        <th>Link tải</th>
+                        <th>Ghi chú áp dụng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+            <tr>
+                <td>Đơn đăng ký mua nhà ở xã hội</td>
+                <td>Mẫu 01 — Nghị định 136/2026/NĐ-CP</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-04/mau-01-noxh-nd136.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Có mẫu tải</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy chứng minh đối tượng và thu nhập</td>
+                <td>Mẫu 01a — Thông tư 32/2025/TT-BXD</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/uploads/Hoidapphapluat/2026/NDQ/mau-so-01a-tt-32-bxd.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Do cơ quan hoặc đơn vị nơi công tác xác nhận</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 02 — Trường hợp chưa có nhà ở (Phụ lục Thông tư 08/2026/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/ms02.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 03 — Trường hợp có nhà nhưng diện tích bình quân dưới 15 m² sàn/người (Phụ lục I Thông tư 05/2024/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/3-Pl1-05-2024-TT-BXD.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+                </tbody>
+            </table>
+        </div>
+        <p class="back-top"><a href="#top">↑ Về đầu trang</a></p>
+    </section>
+    
+    <section class="group-card" id="nhom-9">
+        <h2>Nhóm 9 — Người đã trả lại nhà ở công vụ</h2>
+        <p class="income-note"><strong>Lưu ý:</strong> Không yêu cầu giấy chứng minh thu nhập của người đứng đơn.</p>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại hồ sơ</th>
+                        <th>Tên giấy tờ / biểu mẫu</th>
+                        <th>Link tải</th>
+                        <th>Ghi chú áp dụng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+            <tr>
+                <td>Đơn đăng ký mua nhà ở xã hội</td>
+                <td>Mẫu 01 — Nghị định 136/2026/NĐ-CP</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-04/mau-01-noxh-nd136.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Có mẫu tải</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy chứng minh đối tượng</td>
+                <td>Mẫu 01 — Thông tư 08/2026/TT-BXD</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/ms01-doi-tuong.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Dùng để xác nhận thuộc nhóm đối tượng</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ làm căn cứ xác nhận</td>
+                <td>Quyết định hoặc biên bản trả lại nhà ở công vụ</td>
+                <td><span class="no-download">Không có link tải chung</span></td>
+                <td>Không có mẫu tải chung; dùng hồ sơ thực tế do cơ quan quản lý nhà ở công vụ lập</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 02 — Trường hợp chưa có nhà ở (Phụ lục Thông tư 08/2026/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/ms02.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 03 — Trường hợp có nhà nhưng diện tích bình quân dưới 15 m² sàn/người (Phụ lục I Thông tư 05/2024/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/3-Pl1-05-2024-TT-BXD.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+                </tbody>
+            </table>
+        </div>
+        <p class="back-top"><a href="#top">↑ Về đầu trang</a></p>
+    </section>
+    
+    <section class="group-card" id="nhom-10">
+        <h2>Nhóm 10 — Người bị thu hồi đất, giải tỏa hoặc phá dỡ nhà ở nhưng chưa được bồi thường bằng nhà ở, đất ở</h2>
+        <p class="income-note"><strong>Lưu ý:</strong> Không yêu cầu giấy chứng minh thu nhập của người đứng đơn.</p>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại hồ sơ</th>
+                        <th>Tên giấy tờ / biểu mẫu</th>
+                        <th>Link tải</th>
+                        <th>Ghi chú áp dụng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+            <tr>
+                <td>Đơn đăng ký mua nhà ở xã hội</td>
+                <td>Mẫu 01 — Nghị định 136/2026/NĐ-CP</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-04/mau-01-noxh-nd136.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Có mẫu tải</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy chứng minh đối tượng</td>
+                <td>Mẫu 01 — Thông tư 08/2026/TT-BXD</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/ms01-doi-tuong.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Dùng để xác nhận thuộc nhóm đối tượng</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ làm căn cứ xác nhận</td>
+                <td>Quyết định thu hồi đất, giải tỏa hoặc phá dỡ và phương án bồi thường</td>
+                <td><span class="no-download">Không có link tải chung</span></td>
+                <td>Không có mẫu tải chung; dùng hồ sơ thực tế do cơ quan có thẩm quyền ban hành</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 02 — Trường hợp chưa có nhà ở (Phụ lục Thông tư 08/2026/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/ms02.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+            <tr>
+                <td>Giấy tờ về điều kiện nhà ở</td>
+                <td>Mẫu 03 — Trường hợp có nhà nhưng diện tích bình quân dưới 15 m² sàn/người (Phụ lục I Thông tư 05/2024/TT-BXD)</td>
+                <td><a class="download" href="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HT/2026-03/3-Pl1-05-2024-TT-BXD.doc" target="_blank" rel="noopener noreferrer">Tải hồ sơ</a></td>
+                <td>Chọn một trong hai mẫu điều kiện nhà ở</td>
+            </tr>
+        
+                </tbody>
+            </table>
+        </div>
+        <p class="back-top"><a href="#top">↑ Về đầu trang</a></p>
+    </section>
+    
+
+        <section class="sources">
+            <h2>Nguồn tham khảo</h2>
+            <ul>
+                <li><a href="https://thuvienphapluat.vn/phap-luat/ho-tro-phap-luat/tron-bo-ho-so-mua-nha-o-xa-hoi-2026-moi-nhat-va-cach-ghi-mau-ho-so-dang-ky-mua-nha-o-xa-hoi-moi-nha-201914-249240.html" target="_blank" rel="noopener noreferrer">Bài nguồn chính</a></li>
+<li><a href="https://chinhphu.vn/?docid=217605&amp;pageid=27160" target="_blank" rel="noopener noreferrer">Nghị định 136/2026/NĐ-CP</a></li>
+<li><a href="https://thuvienphapluat.vn/hoi-dap-phap-luat/08-mau-giay-to-nha-o-xa-hoi-ap-dung-2026-theo-huong-dan-van-ban-hop-nhat-17-bo-xay-dung-kem-file-ta-138085216.html" target="_blank" rel="noopener noreferrer">Tổng hợp 08 mẫu giấy tờ nhà ở xã hội áp dụng năm 2026</a></li>
+<li><a href="https://thuvienphapluat.vn/van-ban/Xay-dung-Do-thi/Thong-tu-08-2026-TT-BXD-sua-doi-cac-Thong-tu-trong-linh-vuc-nha-o-695211.aspx" target="_blank" rel="noopener noreferrer">Thông tư 08/2026/TT-BXD</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            Cập nhật bản tổng hợp: 18/06/2026. Tệp HTML dùng mã hóa UTF-8.
+        </div>
+    </footer>
+</body>
+</html>

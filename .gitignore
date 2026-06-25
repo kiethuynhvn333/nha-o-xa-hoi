@@ -1,1 +1,4 @@
-02_data/raw/form_recording.MP4
+01_data/raw/form_recording.MP4
+*.MP4
+*.mp4
+.DS_Store

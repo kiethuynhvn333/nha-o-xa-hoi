@@ -1,6 +1,6 @@
 ==============================================================
 CONTEXT — DỰ ÁN TALLY FORM KIỂM TRA ĐIỀU KIỆN MUA NHÀ Ở XÃ HỘI (NOXH)
-Cập nhật: 18/06/2026
+Cập nhật: 25/06/2026
 ==============================================================
 
 ------------------------------------------------------------
@@ -259,5 +259,29 @@ FILE MỚI TRONG FOLDER:
     - Trade-off phone->email: email là kênh re-contact yếu
       hơn Zalo/SMS/call cho audience VN; cân nhắc nếu mục
       tiêu là đẩy install.
+
+------------------------------------------------------------
+13. CẬP NHẬT TRẠNG THÁI TUẦN (25/06/2026)
+------------------------------------------------------------
+TRẠNG THÁI: ĐÃ CHẠY CAMPAIGN (sprint test cadence 1).
+
+(A) CAMPAIGN ĐÃ LÊN SÓNG (air) NGÀY 23/06/2026.
+    - Đây là cadence test đầu tiên trên Digital, chu kỳ 7 ngày.
+
+(B) MỤC TIÊU SPRINT TEST NÀY:
+    - Đo xem người dùng có thấy NỘI DUNG & GIÁ TRỊ phù hợp
+      (relevant) với họ hay không, và có SUBMIT form test
+      hay không.
+
+(C) MỐC REVIEW: 30/06/2026 (sau 7 ngày). Khi review sẽ xem:
+    1. Số form submit.
+    2. Chi phí (cost) đã spend.
+    3. Insight từ Tally -> tìm điểm cần cải thiện cho
+       cadence tiếp theo.
+
+ĐIỂM TREO / NHẮC:
+    - Các rủi ro pre-Legal từ phiên 19/06 vẫn còn (ngưỡng
+      thu nhập 35 vs 37,5; CTA placeholder chotot.com nếu
+      chưa đổi sang deep link/app-store).
 
 ==============================================================
